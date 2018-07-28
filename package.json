@@ -1,0 +1,25 @@
+{
+  "name": "uniwersal-workflow",
+  "version": "1.0.0",
+  "description": "uniwersal startup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grzeli/uniwersal-workflow.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp",
+    "Git"
+  ],
+  "author": "S.G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grzeli/uniwersal-workflow/issues"
+  },
+  "homepage": "https://github.com/grzeli/uniwersal-workflow#readme"
+}
