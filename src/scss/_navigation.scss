@@ -1,0 +1,84 @@
+.navigation {
+    @include clearfix;
+    padding: 0px;
+    background-color: $nav-bar-color;
+    #guru {
+        background-color: $yellow;
+        font-size: $paragraph-font-size;
+        @include tablet {
+            height:80px;
+            width: 160px;
+
+            text-align: center;      
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }    
+    }
+
+    #guru2{
+        text-align: center; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 15px;
+        display: block;
+        @include tablet {
+            display: inline-flex;
+            margin-top: 6.5%;
+        }
+
+    }
+
+    h2 {
+        text-align: center;
+        margin:0;  
+
+
+
+        &.nav {
+            display: block;
+            text-align:center;          
+
+
+            @include tablet {
+                display: inline;
+
+            }
+        }
+    }
+
+    nav {
+        display: inline;
+        text-align: center;
+        @include tablet {
+            float: left;
+        }
+
+        a {
+            color: $anchor-text-color;
+            font-size: $anchor-font-size;
+            text-decoration: none;
+            display: block;
+
+
+            &:hover {
+
+            }
+
+            @include tablet {
+                display: inline;
+
+                margin-right: 25px;
+
+                &:first-child {
+                    float: left;
+                    margin-left: 25px; 
+                }
+            }
+
+
+        }
+    }
+}
+

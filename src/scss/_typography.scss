@@ -1,0 +1,24 @@
+h1,h2,h3 {
+    color:          $heading-color;
+    font-family:    $heading-font-family;
+    font-weight:    $heading-font-weight;
+    font-style:     $heading-font-style;
+    font-stretch:   $heading-font-stretch;
+    line-height:    $heading-line-height;  
+    letter-spacing: $heading-letter-spacing;
+}
+
+h2 {
+    margin:         13px 0;
+}
+
+p {
+    font-size:      $paragraph-font-size;
+    color:          $paragraph-text-color;
+    font-family:    $paragraph-font-family;
+    font-weight:    $paragraph-font-weight;
+    font-style:     $paragraph-font-style;
+    font-stretch:   $paragraph-font-stretch;
+    line-height:    $paragraph-line-height;  
+    letter-spacing: $paragraph-letter-spacing;
+}

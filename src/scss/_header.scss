@@ -1,0 +1,25 @@
+.header{
+    @include clearfix;  
+    text-align: center;
+    h1{
+       margin-top:30%;
+    }
+ 
+    li.image-container-2{
+        float: right;
+        list-style: none;
+        img {
+            display: block;
+            max-width: 100%;
+            @include border-radius(10px);
+        }
+        @include tablet {
+            @include grid-images(3, 0%);
+            img {
+                display:inline-block;
+                max-width: 100%;
+                @include border-radius(10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+$bg-color:               #FFFFFF;
+$yellow:                 #feb944;
+$nav-bar-color:           #403f55;
+$bg-footer-color:        #f7f6f6;
+$adw-gray:               #c8d1da;
+$color:                  blue;
+$hover-color:            green;
+
+$heading-color:          #000000;
+$heading-font-family:    'Roboto Slab', serif;
+$heading-font-weight:    normal;
+$heading-font-style:     normal;
+$heading-font-stretch:   normal;
+$heading-line-height:    normal;
+$heading-letter-spacing: normal;
+$heading-font-size: (
+    h1: 28px,
+    h2: 24px,
+    h3: 16px,
+);
+
+
+$text-autor-color:       rgba(0, 0, 0, 0.6);
+
+
+$paragraph-text-color:   #464646;
+$paragraph-font-size:    14px;
+$paragraph-font-family:  'Lato', sans-serif;
+$paragraph-font-weight:    normal;
+$paragraph-font-style:     normal;
+$paragraph-font-stretch:   normal;
+$paragraph-line-height:    1.5;
+$paragraph-letter-spacing: normal;
+
+
+$anchor-text-color:      #ffffff;
+$anchor-font-size:       12px;
+
+
+//grid
+$columns:        12;
+$grid-max-width: 1200px;
+$breakpoints: (
+    phone:       480px,
+    tablet:      768px,
+    desktop:     1024px
+);

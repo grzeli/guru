@@ -1,0 +1,23 @@
+.gallery {
+
+    @include clearfix;
+    li.image-container{
+        float: left;
+        list-style: none;
+        img {
+            display: block;
+            max-width: 100%;
+            @include border-radius(10px);
+        }
+        @include tablet {
+            @include grid-images(3, 6%);
+            img {
+                display: block;
+                max-width: 100%;
+                @include border-radius(10px);
+            }
+        }
+    }
+}
+
+

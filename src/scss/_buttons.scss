@@ -1,0 +1,3 @@
+.btn{
+    @include button($bg-color, darken($yellow, 20), black);
+}

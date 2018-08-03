@@ -18,6 +18,7 @@ var htmlmin = require('gulp-htmlmin');
 
 var SOURCEPATHS ={
     sassSource : 'src/scss/*.scss',
+    sassApp : 'src/scss/app.scss',
     htmlSource : 'src/*.html',
     htmlPartialSource : 'src/partial/*.html',
     jsSource : 'src/js/**',
@@ -40,10 +41,14 @@ gulp.task('clean-scripts', function(){
         .pipe(clean());
 });
 
+gulp.task('clean-images', function(){
+    return gulp.src(APPPATH.img + '/**', {read: false, force: true})
+    .pipe(clean());
+});
 gulp.task('sass', function(){ 
     var SassFiles;
 
-    SassFiles = gulp.src(SOURCEPATHS.sassSource)
+    SassFiles = gulp.src(SOURCEPATHS.sassApp)
         .pipe(autoprefixer())
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))    
     return merge(SassFiles)
@@ -51,7 +56,7 @@ gulp.task('sass', function(){
         .pipe(gulp.dest(APPPATH.css));
 });
 
-gulp.task('images', function(){
+gulp.task('images',['clean-images'], function(){
     return gulp.src(SOURCEPATHS.imgSource)
         .pipe(newer(APPPATH.img))
         .pipe(imagemin())
