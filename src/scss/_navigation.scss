@@ -1,31 +1,31 @@
 .navigation {
+    .menu{
+
+        @include clearfix;
+        @include tablet {
+            margin: 0 auto;
+            width: 100%;
+            max-width: $grid-max-width;
+
+        }
+    }
     @include clearfix;
     padding: 0px;
     background-color: $nav-bar-color;
-    #guru {
-        background-color: $yellow;
-        font-size: $paragraph-font-size;
-        @include tablet {
-            height:80px;
-            width: 160px;
 
-            text-align: center;      
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }    
-    }
+
 
     #guru2{
         text-align: center; 
         align-items: center;
         justify-content: center;
-        margin-top: 2%;
-        margin-bottom: 15px;
+       margin-bottom: 5px;
+
         display: block;
         @include tablet {
             display: inline-flex;
-            margin-top: 6.5%;
+            margin-bottom: 0;
+            
         }
 
     }
@@ -38,9 +38,7 @@
 
         &.nav {
             display: block;
-            text-align:center;          
-
-
+            text-align:center;  
             @include tablet {
                 display: inline;
 
@@ -49,10 +47,13 @@
     }
 
     nav {
+        width: 100%;
+        max-width: $grid-max-width;
         display: inline;
-        text-align: center;
+
         @include tablet {
             float: left;
+
         }
 
         a {
@@ -60,7 +61,13 @@
             font-size: $anchor-font-size;
             text-decoration: none;
             display: block;
-
+            &:first-child{
+                 background-color: $yellow;
+               
+            }
+            &:last-child{
+                margin-bottom:15px;
+            }
 
             &:hover {
 
@@ -68,12 +75,14 @@
 
             @include tablet {
                 display: inline;
-
                 margin-right: 25px;
-
                 &:first-child {
-                    float: left;
-                    margin-left: 25px; 
+                    background-color: $yellow;
+                    font-size: $paragraph-font-size;
+                    height:80px;
+                    width: 160px;
+
+
                 }
             }
 

@@ -1,53 +1,35 @@
-.content {
- 
-    @include clearfix;
-    div {
-        margin:0px;
-        padding: 1em;
-    }
+
+
+
+.content { 
+    @include clearfix; 
+    
     li.image-container{
         float: top;
         list-style: none;
-          img {
-            display: block;
-            max-width: 100%;
-            @include border-radius(10px);
-        }
-        @include tablet {
-        @include grid-images(1, 0);
         img {
             display: block;
             max-width: 100%;
             @include border-radius(10px);
         }
-        }
-    }
-    li.image-container-2{
-       
-        float: top;
-        list-style: none;
-          img {
-            display: block;
-            max-width: 100%;
-            @include border-radius(10px);
-        }
         @include tablet {
-        @include grid-images(1, 0);
-        img {
-            display: block;
-            max-width: 100%;
-            @include border-radius(10px);
-        }
+            @include grid-images(1, 0);
+            img {
+                display: block;
+                max-width: 100%;
+                @include border-radius(10px);
+            }
         }
     }
+  
 }
 
 [class*='colum-']{
     @include border-box;
-    float: left;
+ 
     padding: 0em;
     width: 100%;
-    
+
 }
 
 
@@ -66,3 +48,5 @@
         }
     }
 }
+
+

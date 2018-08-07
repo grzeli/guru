@@ -1,11 +1,9 @@
 .container{
+    padding: 0em;
     margin: 0 auto;
     width: 95%;
     @include clearfix;
     @include tablet {
-        width: 90%;
-    }
-    @include desktop {
         width: 100%;
         max-width: $grid-max-width;
     }
@@ -14,18 +12,14 @@
 
 .container1{
     @include clearfix;
-    margin: 0;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0em;
     width: 95%;
     @include tablet {
-        width: 90%;
-    }
-    @include desktop {
         width: 100%;
-        max-width: $grid-max-width;
     }
-    max-width: $grid-max-width;
 }
+ 
 
 
 .row
@@ -43,6 +37,15 @@
     width: 100%;
     
 }
+
+[class*='colu-']{
+    @include border-box;
+ 
+    padding: 0em 1em;
+    width: 100%;
+
+}
+
 
 
 @include tablet {

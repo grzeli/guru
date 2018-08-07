@@ -16,10 +16,13 @@
         @include tablet {
             @include grid-images(3, 0%);
             img {
-                display:inline-block;
+                display:inlinek;
                 max-width: 100%;
                 @include border-radius(10px);
             }
         }
+    }
+    &:after {
+        @include clearfix;
     }
 }
