@@ -7,7 +7,7 @@
     text-align: left;
     h4{
         font-size: 0.7rem;
- 
+
     }
     p{
         font-size: 0.8rem;
@@ -33,20 +33,45 @@
             }
         }
     }
-   
+
 }
 
 .adwards-cont{
     margin:0 1em;
-   float: right;
+    float: right;
     text-align: right;
 }
 
- .adwards-content{
-  
-     position:absolute;
-     margin: -1em;
+.adwards-content{
+
+    position:absolute;
+    margin: -1em;
     bottom:0;
-     right:1em;
-     text-align: right;
+    right:1em;
+    text-align: right;
+}
+.adwards-image{
+    hover{
+        
     }
+    li.image-container{
+        padding: 0.2em;
+        float: right;
+        list-style: none;
+
+        img {
+            display: block;
+            max-width: 100%;
+            @include border-radius(10px);
+        }
+        @include tablet {
+            margin-bottom: auto;
+            @include grid-images(1, 2%);
+            img {
+                display: inline-block;
+                max-width: 100%;
+                @include border-radius(10px);
+            }
+        }
+    }
+}
