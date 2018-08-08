@@ -1,0 +1,52 @@
+.adwards{
+    @include clearfix;
+    margin-bottom: 15px;
+    position:relative;
+    display:flow-root;
+    float: right;
+    text-align: left;
+    h4{
+        font-size: 0.7rem;
+ 
+    }
+    p{
+        font-size: 0.8rem;
+        text-transform:uppercase;
+        font-family: $paragraph-font-family;
+    }
+    li.image-container{
+        padding: 0.2em;
+        float: left;
+        list-style: none;
+        img {
+            display: block;
+            max-width: 100%;
+            @include border-radius(10px);
+        }
+        @include tablet {
+            margin-bottom: auto;
+            @include grid-images(2, 2%);
+            img {
+                display: inline-block;
+                max-width: 100%;
+                @include border-radius(10px);
+            }
+        }
+    }
+   
+}
+
+.adwards-cont{
+    margin:0 1em;
+   float: right;
+    text-align: right;
+}
+
+ .adwards-content{
+  
+     position:absolute;
+     margin: -1em;
+    bottom:0;
+     right:1em;
+     text-align: right;
+    }

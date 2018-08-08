@@ -1,22 +1,27 @@
 .header{
     @include clearfix;  
+      .div{
+        clear:left;
+    }
     text-align: center;
+ 
     h1{
-       margin-top:30%;
+        font-size: 2rem;
+       margin-top:10%;
     }
  
-    li.image-container-2{
+    li.image-container{
         float: right;
         list-style: none;
         img {
-            display: block;
+            display:block;
             max-width: 100%;
             @include border-radius(10px);
         }
         @include tablet {
-            @include grid-images(3, 0%);
+            @include grid-images(1, 0%);
             img {
-                display:inlinek;
+                display:flex;
                 max-width: 100%;
                 @include border-radius(10px);
             }
