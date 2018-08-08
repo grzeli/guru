@@ -1,5 +1,6 @@
 .content { 
     @include clearfix; 
+    position:relative;
     
     li.image-container{
         float: top;
@@ -12,7 +13,7 @@
         @include tablet {
             @include grid-images(1, 0);
             img {
-                display: block;
+                display: block;              
                 max-width: 100%;
                 @include border-radius(10px);
             }
@@ -21,13 +22,7 @@
   
 }
 
-[class*='colum-']{
-    @include border-box;
- 
-    padding: 0em;
-    width: 100%;
 
-}
 
 
 @include tablet {

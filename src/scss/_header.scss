@@ -1,9 +1,9 @@
 .header{
-    @include clearfix;  
-      .div{
-        clear:left;
-    }
-    text-align: center;
+    @include clearfix;      
+     position:relative;
+    display:inline-block;
+    float: left;
+    padding: 0 1em 0 0;
  
     h1{
         font-size: 2rem;
@@ -19,9 +19,9 @@
             @include border-radius(10px);
         }
         @include tablet {
-            @include grid-images(1, 0%);
+            @include grid-images(2, 0%);
             img {
-                display:flex;
+                display:inline-block;
                 max-width: 100%;
                 @include border-radius(10px);
             }

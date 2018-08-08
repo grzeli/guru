@@ -1,0 +1,56 @@
+.footer{
+    @include clearfix; 
+    float: left;
+    li.image-container{
+        float: top;
+        list-style: none;
+        img {
+            display: block;
+            max-width: 100%;
+            @include border-radius(10px);
+        }
+        @include tablet {
+            @include grid-images(1, 5%);
+            img {
+                display: block;
+                max-width: 100%;
+                max-height: 400px;
+                @include border-radius(10px);
+            }
+        }
+    }
+}
+
+
+
+.services-list{
+    @include clearfix;
+    background-color: $bg-color;
+    list-style: none;
+    display:block;
+    @include tablet {
+        margin: 0em;
+        width: 100%;
+        max-width: $grid-max-width;
+
+    }
+
+
+    #guru3{
+        text-align: left; 
+        align-items: left;
+        justify-content: center;       
+        display: block;
+
+    }
+    a {
+        color: #2b2b2b;
+        font-size: 0.8rem;
+        text-decoration: none;
+        display: block;
+        margin: 0.4em;
+        &:first-of-type{
+            margin-top: 1em;
+        }
+    }
+}
