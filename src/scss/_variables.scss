@@ -47,3 +47,10 @@ $breakpoints: (
     desktop:     1024px
 );
 
+//navigation
+$content-width: 1200px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: $nav-bar-color;
+$nav-font-color: $bg-color;
+$link-hover-color: #2581DC;
