@@ -3,17 +3,20 @@
      position:relative;
     display:inline-block;
     float: left;
-    padding: 0 1em 0 0;
+    padding: 0;
  
     h1{
         font-size: 2rem;
        margin-top:10%;
+        padding-right: 1em;
     }
  
-    li.image-container{
+    li.image-container2{
         float: right;
         list-style: none;
+        padding-right: 1em;
         img {
+           
             display:block;
             max-width: 100%;
             @include border-radius(10px);

@@ -1,62 +1,73 @@
 .adwards{
     @include clearfix;
+    @include border-box;
+    padding-left: 0;
+    margin-left: 0;
     margin-bottom: 15px;
-    position:relative;
-    display:flow-root;
-    float: right;
-    text-align: left;
+    position:relative;   
+
     h4{
         font-size: 0.7rem;
-
     }
     p{
         font-size: 0.8rem;
         text-transform:uppercase;
         font-family: $paragraph-font-family;
+
     }
+}
+.adwards-container{
+    @include clearfix;
+    @include border-box;
+    position: relative;
+    margin: auto;
+    padding-bottom: 1em;
+    overflow: hidden;   
+    vertical-align: top;
+    width:100%;
+    height: 100%;
+
+
     li.image-container{
+        @include clearfix;
+        position: relative;
+        max-width: 100%;
         padding: 0.2em;
         float: left;
         list-style: none;
-        img {
-            display: block;
-            max-width: 100%;
+        img{
+            position: relative;
+            max-width:100%;
             @include border-radius(10px);
         }
         @include tablet {
-            margin-bottom: auto;
-            @include grid-images(2, 2%);
-            img {
-                display: inline-block;
-                max-width: 100%;
-                @include border-radius(10px);
-            }
+            margin-bottom:auto;
+            max-width: 50%;
+            margin-right: .4em;
+            display:block;
         }
     }
 
 }
 
-.adwards-cont{
-    margin:0 1em;
-    float: right;
-    text-align: right;
+.adwards-sign{
+    margin: auto;
+    position: absolute;
+    right:0;
+    bottom: -.4em;
+    padding: .5em;
+
 }
 
-.adwards-content{
 
-    position:absolute;
-    margin: -1em;
-    bottom:0;
-    right:1em;
-    text-align: right;
-}
 .adwards-image{
     hover{
-        
+
     }
+    display: block;
     li.image-container{
-        padding: 0.2em;
-        float: right;
+        padding: .2em;
+        float: top;
         list-style: none;
 
         img {
@@ -68,7 +79,7 @@
             margin-bottom: auto;
             @include grid-images(1, 2%);
             img {
-                display: inline-block;
+
                 max-width: 100%;
                 @include border-radius(10px);
             }
