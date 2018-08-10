@@ -138,11 +138,11 @@ nav {
 .brand {   
     margin-right: 15px;
     background-color: $yellow;
-    display:block;
+text-align: center;
     position:static;
-    padding-left: 20px;
+    padding: 0 20px 0 20px;
     float: left;
-    line-height: $nav-height;
+    line-height: ($nav-height/2);
     font-size: 1.4em;
    
     a,
