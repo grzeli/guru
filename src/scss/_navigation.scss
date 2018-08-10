@@ -142,7 +142,7 @@ text-align: center;
     position:static;
     padding: 0 20px 0 20px;
     float: left;
-    line-height: ($nav-height/2);
+    line-height:160%;
     font-size: 1.4em;
    
     a,
@@ -150,4 +150,19 @@ text-align: center;
         color: $nav-font-color;
         text-decoration: none;
     }
+    #lucky{
+    font-family: 'Luckiest Guy', cursive;
+    padding:0;
+    margin:0;
+   
+}
+
+#dancing{
+    font-family: 'Dancing Script', cursive;
+     color: #000000;
+     padding:0;
+    margin:0;
+   
+}
+    
 }
