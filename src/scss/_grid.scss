@@ -1,8 +1,10 @@
 .container{
+     @include clearfix;
+    position:static;
     padding: 0em;
     margin: 0 auto;
     width: 95%;
-    @include clearfix;
+   
     @include tablet {
         width: 100%;
         max-width: $grid-max-width;
