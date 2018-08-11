@@ -22,7 +22,19 @@
                 @include border-radius(10px);
             }
         }
-    }
+    }  
+ h2 {
+   width: 100%; 
+   text-align:left; 
+   border-bottom: 3px solid $yellow; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
 }
 
 

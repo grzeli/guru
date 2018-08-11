@@ -13,14 +13,6 @@ $heading-font-style:     normal;
 $heading-font-stretch:   normal;
 $heading-line-height:    normal;
 $heading-letter-spacing: normal;
-$heading-font-size: (
-    h1: 5rem,
-    h2: 5.5rem,
-    h3: 1rem,
-    h4: 0.5rem,
-);
-
-
 $text-autor-color:       rgba(0, 0, 0, 0.6);
 
 
@@ -36,6 +28,7 @@ $paragraph-letter-spacing: normal;
 
 $anchor-text-color:      #ffffff;
 $anchor-font-size:       0.8rem;
+$anchor-font-family:'Lato', sans-serif;
 
 
 //grid
