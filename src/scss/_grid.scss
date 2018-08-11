@@ -1,6 +1,6 @@
 .container{
      @include clearfix;
-    position:static;
+    position: relative;
     padding: 0em 0em 1em 0em;
     margin: 0 auto;
     width: 95%;
@@ -47,12 +47,7 @@
 
 }
 
-[class*='colu-']{
-    @include border-box; 
-    padding: 0em 0em;
-    width: 100%;
 
-}
 
 
 
