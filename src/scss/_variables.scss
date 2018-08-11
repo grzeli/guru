@@ -33,11 +33,18 @@ $anchor-font-family:'Lato', sans-serif;
 
 //grid
 $columns:        12;
-$grid-max-width: 1200px;
+$grid-min-width: 320px; // poniżej takiej szerokości ekranu wyświetla się horizontal scroll
+$grid-max-width: 1400px;
 $breakpoints: (
-    phone:       480px,
+    // od 0 do 575 phone
+    // od 576 do 767 phone
+    // od 768 do 991 tablet
+    // od 992 do 1199 desktop
+    // powyzej 1200 desktop xxl
+    phone:       576px, 
     tablet:      768px,
-    desktop:     1024px
+    desktop:     992px,
+    xxl:         1200px
 );
 //columns
 $c1:1;
