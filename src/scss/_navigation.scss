@@ -120,7 +120,7 @@ nav {
 }
 
 @media screen and (min-width: $breakpoint) {
-    .nav-list {
+    .nav--list {
         display: block !important;
     }
 }
@@ -150,14 +150,14 @@ text-align: center;
         color: $nav-font-color;
         text-decoration: none;
     }
-    #lucky{
+    #brand--lucky{
     font-family: 'Luckiest Guy', cursive;
     padding:0;
     margin:0;
    
 }
 
-#dancing{
+#brand--dancing{
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
      color: #000000;

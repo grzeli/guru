@@ -1,6 +1,7 @@
 .footer{
     @include clearfix; 
     float: left;
+    padding-left:0;
     li.image-container{
         float: top;
         list-style: none;

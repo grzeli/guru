@@ -1,11 +1,10 @@
 .adwards{
     @include clearfix;
     @include border-box;
+    position: relative;
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 15px;
-    position:relative;   
-
     h4{
         font-size: 0.7rem;
     }
@@ -16,33 +15,30 @@
 
     }
 }
-.adwards-container{
-    @include clearfix;
+.adwards-container{    
     @include border-box;
     position: relative;
-    margin: auto;
-    padding-bottom: 1em;
-    overflow: hidden;   
-    vertical-align: top;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 0;
+    margin: 0 auto;
+    padding-bottom: 1em;    
     width:100%;
     height: 100%;
-
-
     li.image-container{
-        @include clearfix;
-        position: relative;
+        @include clearfix;       
         max-width: 100%;
         padding: 0.2em;
-        float: left;
+        display:block;
         list-style: none;
         img{
-            position: relative;
             max-width:100%;
             @include border-radius(10px);
         }
         @include tablet {
+            @include grid-images(1, 1%);
             margin-bottom:auto;
-            max-width: 50%;
+            max-width: 100%;
             margin-right: .4em;
             display:block;
         }
@@ -51,11 +47,11 @@
 }
 
 .adwards-sign{
-    margin: auto;
-    position: absolute;
-    right:0;
-    bottom: -.4em;
-    padding: .5em;
+    display: block;    
+    h4 {
+        display: inline-block;
+        align-self: flex-end;       
+    }
 
 }
 
@@ -73,6 +69,7 @@
         img {
             display: block;
             max-width: 100%;
+            height: auto !important; 
             @include border-radius(10px);
         }
         @include tablet {
