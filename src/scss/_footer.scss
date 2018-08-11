@@ -2,6 +2,9 @@
     @include clearfix; 
     float: left;
     padding-left:0;
+    padding-top:1em;
+    padding-bottom: 0;
+    display: inline-block;
     li.image-container{
         float: top;
         list-style: none;
