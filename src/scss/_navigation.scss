@@ -1,5 +1,7 @@
 nav {
     float: left;
+    margin:0 auto;
+    max-height: $nav-height;
 
     ul {
         list-style: none;
@@ -11,7 +13,7 @@ nav {
             a {
                 display: block;
                 padding: 0 20px;
-                line-height: $nav-height;
+                line-height: 70px;
                 background: $nav-background;
                 color: $nav-font-color;
                 text-decoration: none;
@@ -136,34 +138,37 @@ nav {
 }
 
 .brand {   
-    margin-right: 15px;
+    margin:0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
     background-color: $yellow;
-text-align: center;
-    position:static;
+    text-align: center;
     padding: 0 20px 0 20px;
     float: left;
-    line-height:160%;
+    line-height: (($nav-height)/2);
     font-size: 1.4em;
-   
+
     a,
     a:visited {
         color: $nav-font-color;
         text-decoration: none;
     }
-    #brand--lucky{
-    font-family: 'Luckiest Guy', cursive;
-    padding:0;
-    margin:0;
-   
-}
 
-#brand--dancing{
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-     color: #000000;
-     padding:0;
-    margin:0;
-   
-}
-    
+    #brand--lucky{
+        font-family: 'Luckiest Guy', cursive;
+        padding:0;
+        margin:0;
+
+    }
+
+    #brand--dancing{
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        color: #000000;
+        padding:0;
+        margin:0;
+
+    }
+
 }

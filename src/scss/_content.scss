@@ -1,8 +1,6 @@
 .content { 
     @include clearfix; 
-   
-   
-    
+    margin:0 auto;    
     li.image-container{
         float: top;
         list-style: none;
@@ -22,7 +20,7 @@
             }
         }
     }
-  
+
 }
 
 
