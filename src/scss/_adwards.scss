@@ -1,100 +1,143 @@
 .adwards{
     @include clearfix;
-    @include border-box;    
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 15px;
-    h4{
-        font-size: 0.7rem;
+    @include border-box;
+    max-width: $grid-max-width;
+    width:100%;
+    @include tablet{
+    width:(100%/$columns * 3);
     }
-    p{
-        font-size: 0.8rem;
-        text-transform:uppercase;
-        font-family: $paragraph-font-family;
+    
+    float: left;
+    margin: 0 auto;
 
+
+    p{
+        font-size: 1.1 vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 1.2vw;
+        }
+        @include desktop{
+            font-size: 1.3vw;
+        }
+        @include xxl{
+            font-size: 1.4vw;
+        }
+    }
+    div:nth-of-type(n){
+
+        list-style: none;
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 0;
+        img{
+            display:block;
+            @include grid-images(1, 1%);
+        }
     }
 }
+
+
+
+
+
+/*.adwards{
+@include clearfix;
+@include border-box;    
+padding-left: 0;
+margin-left: 0;
+margin-bottom: 15px;
+h4{
+font-size: 0.7rem;
+}
+p{
+font-size: 0.8rem;
+text-transform:uppercase;
+font-family: $paragraph-font-family;
+
+}
+}
 .adwards-container{    
-    @include border-box;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 0;
-    margin: 0 auto;
-    padding-bottom: 1em;    
-    width:100%;
+@include border-box;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-column-gap: 0;
+margin: 0 auto;
+padding-bottom: 1em;    
+width:100%;
 
-    li.image-container{
-        @include clearfix;       
-        max-width: 100%;
-        padding: 0.2em;
-        display:block;
-        list-style: none;
-        img{            
-            max-width:100%;
-            @include border-radius(10px);
-        }
-        @include tablet {
-            @include grid-images(1, 1%);
-            margin-bottom:auto;
-            max-width: 100%;
-            margin-right: .4em;
-        }
+li.image-container{
+@include clearfix;       
+max-width: 100%;
+padding: 0.2em;
+display:block;
+list-style: none;
+img{            
+max-width:100%;
+@include border-radius(10px);
+}
+@include tablet {
+@include grid-images(1, 1%);
+margin-bottom:auto;
+max-width: 100%;
+margin-right: .4em;
+}
 
-    }
+}
 
 }
 
 .adwards-sign{
-    display: block;
-    position: relative;
-    @include tablet{
-        line-height: normal;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: stretch;
-        align-content: space-between;
-    }
-    #podpis {
-        display: inline-block;
-        position: absolute;
-        bottom:-1em;;
-        text-align:left;
-        @include tablet{
-            position:static;
-            display:flex;
-           
-        }
-    }
+display: block;
+position: relative;
+@include tablet{
+line-height: normal;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+align-content: space-between;
+}
+#podpis {
+display: inline-block;
+position: absolute;
+bottom:-1em;;
+text-align:left;
+@include tablet{
+position:static;
+display:flex;
+
+}
+}
 }
 
 
 
 .adwards-image{
-    hover{
+hover{
 
-    }
-
-    display: block;
-    li.image-container{
-        padding: .2em;
-        float: top;
-        list-style: none;
-
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto !important; 
-            @include border-radius(10px);
-        }
-        @include tablet {
-            margin-bottom: auto;
-            @include grid-images(1, 2%);
-            img {
-
-                max-width: 100%;
-                @include border-radius(10px);
-            }
-        }
-    }
 }
+
+display: block;
+li.image-container{
+padding: .2em;
+float: top;
+list-style: none;
+
+img {
+display: block;
+max-width: 100%;
+height: auto !important; 
+@include border-radius(10px);
+}
+@include tablet {
+margin-bottom: auto;
+@include grid-images(1, 2%);
+img {
+
+max-width: 100%;
+@include border-radius(10px);
+}
+}
+}
+}// */

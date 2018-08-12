@@ -66,5 +66,12 @@
         }
     }
 }
+@include xxl {
+    @for $i from 1 through $columns {
+        .large-column-#{$i} {
+            width: 100% / $columns * $i;
+        }
+    }
+}
 
 

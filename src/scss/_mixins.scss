@@ -15,6 +15,11 @@
         @content; 
     }
 }
+@mixin xxl {
+    @media only screen and(min-width: map-get($breakpoints, 'xxl')){
+        @content; 
+    }
+}
 
 @mixin clearfix{
     *zoom:1;
