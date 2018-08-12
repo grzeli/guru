@@ -17,7 +17,7 @@
 .adwards-container{    
     @include border-box;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-column-gap: 0;
     margin: 0 auto;
     padding-bottom: 1em;    
@@ -59,12 +59,11 @@
         display: inline-block;
         position: absolute;
         bottom:-1em;;
-        right:0;
-        text-align: right;
+        text-align:left;
         @include tablet{
             position:static;
             display:flex;
-            align-self: flex-end;  
+           
         }
     }
 }
