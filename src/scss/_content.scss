@@ -10,7 +10,7 @@
         display: inline-block;
         max-width: (100%/$columns * 9);
     }
-    
+  
     div:first-of-type{
         width:100%;         
 
@@ -37,7 +37,7 @@
 
     div:nth-child(even){
         width:100%;
-        padding-top:2em;
+        padding-top:7em;
 
         display:block;
         @include tablet{
@@ -45,6 +45,7 @@
             vertical-align:top;
             width:(100%/$columns * 5);
             padding-right:1em;
+             padding-top:2em;
         }
 
         img{
@@ -90,4 +91,16 @@
             font-size: 1.33vw;
         }
     }
+     a{
+        font-size: 3vw;
+        @include tablet{
+            font-size: 1.4vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 1.23vw;
+        }
+    } 
 }

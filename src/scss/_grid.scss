@@ -3,12 +3,12 @@
     position: static;   
     padding: 0;
     margin: 0 auto;
-    width: 100%;
-    max-width:$grid-max-width;
-   
-    @include tablet {
-        width: 100%;
-        max-width: $grid-max-width;
+    width: 90%;
+    max-width:$grid-max-width;  
+    @include tablet{
+        width:95%;
     }
-   
+    @include desktop{
+        width:100%;
+    }
 }
