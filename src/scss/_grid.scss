@@ -1,77 +1,14 @@
 .container{
      @include clearfix;
-    position: static;
-    padding: 0em 0em 1em 0em;
+    position: relative;;   
+    padding: 0;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
+    max-width:$grid-max-width;
    
     @include tablet {
         width: 100%;
         max-width: $grid-max-width;
     }
-    max-width: $grid-max-width;
+   
 }
-
-.container1{
-    @include clearfix;
-    margin: 0 auto;
-    padding: 0em;
-    width: 95%;
-    @include tablet {
-        width: 100%;
-    }
-}
- 
-
-
-.row
-{
-    @include clearfix;
-    @include tablet{
-        margin: 0 0;
-    }
-}
-
-[class*='column-']{
-    @include border-box;
-    float: left;
-    padding: 1em;
-    width: 100%;
-    
-}
-[class*='colum-']{
-    @include border-box;
-    float: left;
-    padding: 1em 1em 0 0;
-    width: 100%;
-
-}
-
-
-
-
-
-@include tablet {
-    @for $i from 1 through $columns {
-        .medium-column-#{$i} {
-            width: 100% / $columns * $i;
-        }
-    }
-}
-
-@include desktop {
-    @for $i from 1 through $columns {
-        .large-column-#{$i} {
-            width: 100% / $columns * $i;
-        }
-    }
-}
-@include xxl {
-    @for $i from 1 through $columns {
-        .large-column-#{$i} {
-            width: 100% / $columns * $i;
-        }
-    }
-}
-
-

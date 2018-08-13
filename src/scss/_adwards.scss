@@ -4,12 +4,14 @@
     padding:1em;
     max-width: $grid-max-width;
     width:100%;
+   
+    margin: 0 auto;
     @include tablet{
         width:(100%/$columns * 3);
         position:relative;
+        float:right; //zmiena floata w celu obczj
     }
-    float: left;
-    margin: 0 auto;
+  
     h4{
         font-size: 1.6vw;
         line-height: 250%;
@@ -33,7 +35,7 @@
             font-size: 1.2vw;
         }
         @include xxl{
-            font-size: .8vw;
+            font-size: 1vw;
         }
     }
     // div:nth-of-type(n){

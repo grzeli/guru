@@ -1,44 +1,35 @@
-.content { 
-    @include clearfix; 
-    margin:0 auto;    
-    li.image-container{
-        float: top;
-        list-style: none;
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto !important; 
-            @include border-radius(10px);
-        }
-        @include tablet {
-            @include grid-images(1, 0);
-            img {
-                display: block;              
-                max-width: 100%;
-                height: auto !important; 
-                @include border-radius(10px);
-            }
+.content{
+    margin:0 auto;
+    max-width: (100%/$columns * 9);
+    width:100%;
+    padding:0;
+    position:relative;
+    display: inline-block;
+    div:first-of-type{
+        width:100%;         
+        padding:1em;
+        img{
+            width:100%;
+            margin:0 auto;
         }
     }
 
-}
+    div:nth-of-type(n+3){
+        width:(100%/$columns * 7); 
+        padding:1em;
 
+        img{
+            width:100%;
+            margin:0 auto;
+        }
+    }
 
-
-
-@include tablet {
-    @for $i from 1 through $columns {
-        .medium-colum-#{$i} {
-            width: 100% / $columns * $i;
+    div:nth-child(even){
+        width:(100%/$columns * 5);
+        padding:1em;
+        img{
+            width:100%;
+            margin:0 auto;
         }
     }
 }
-
-@include desktop {
-    @for $i from 1 through $columns {
-        .large-colum-#{$i} {
-            width: 100% / $columns * $i;
-        }
-    }
-}
-
