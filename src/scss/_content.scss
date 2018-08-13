@@ -5,6 +5,7 @@
     padding:0;
     position:relative;
     display: inline-block;
+    float:left;
     div:first-of-type{
         width:100%;         
         padding:1em;
@@ -17,7 +18,9 @@
     div:nth-of-type(n+3){
         width:(100%/$columns * 7); 
         padding:1em;
-
+        
+        display:inline-block;
+        vertical-align:top;
         img{
             width:100%;
             margin:0 auto;
@@ -27,6 +30,9 @@
     div:nth-child(even){
         width:(100%/$columns * 5);
         padding:1em;
+     
+        display:inline-block;
+        vertical-align:top;
         img{
             width:100%;
             margin:0 auto;
