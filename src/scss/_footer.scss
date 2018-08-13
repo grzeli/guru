@@ -3,6 +3,9 @@
     width:90%; 
     max-width:$grid-max-width;
     margin:0 auto;
+    img{
+        width:100%;
+    }
 
     @include tablet{
         width:95%;
