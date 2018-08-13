@@ -1,72 +1,102 @@
 .footer{
-    @include clearfix; 
-    float: left;
-    padding-left:0;
-    padding-top:1em;
-    padding-bottom: 0;
-    display: inline-block;
-    li.image-container{
-        float: top;
-        list-style: none;
-        img {
-            display: block;
-            max-width: 100%;
-            @include border-radius(10px);
+    @include clearfix;
+    width:90%; 
+    max-width:$grid-max-width;
+    margin:0 auto;
+
+    @include tablet{
+        width:95%;
+    }
+    @include desktop{
+        width:100%;
+    }
+    div:nth-of-type(n){
+        display:block;
+        width:100%;      
+        margin:0 auto;
+        img{
+            width:100%;
         }
-        @include tablet {
-            @include grid-images(1, 5%);
-            img {
-                display: block;
-                max-width: 100%;
-                max-height: 400px;
-                @include border-radius(10px);
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 4);
+
+        }
+    }
+    div:first-of-type{
+        padding-right:1em;
+    }
+    div:last-of-type{
+        padding-left:1em;
+    }
+
+
+
+    .services-list{
+        background-color: $bg-color;
+        list-style: none;
+        display:block;
+        li:nth-of-type(n){
+            width: 100%;
+            @include tablet{
+            display: inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 4);
             }
         }
-    }  
- h2 {
-   width: 100%; 
-   text-align:left; 
-   border-bottom: 3px solid $yellow; 
-   line-height: 0.1em;
-   margin: 10px 0 20px; 
-} 
-
-h2 span { 
-    background:#fff; 
-    padding:0 10px; 
-}
-}
-
-
-
-.services-list{
-    @include clearfix;
-    background-color: $bg-color;
-    list-style: none;
-    display:block;
-    @include tablet {
         margin: 0em;
-        width: 100%;
-        max-width: $grid-max-width;
+        padding:0;
+        a{
+            display:none;
+            width: 100%;
+            @include tablet{
+            display: block;
+            vertical-align:top;
+            padding:.1em;
+            }
+
+        }
+
 
     }
-
-
-    #guru3{
-        text-align: left; 
-        align-items: left;
-        justify-content: center;       
-        display: block;
-
-    }
-    a {
-        color: #2b2b2b;
-        font-size: 0.8rem;
-        text-decoration: none;
-        display: block;
-        margin: 0.4em;
-        &:first-of-type{
-            margin-top: 1em;
+    
+    
+        p{
+        font-size: 2.3vw;
+        @include tablet{
+            font-size: 1.35vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    } 
+  
+  
+    h3{
+         font-size: 2.7vw;
+        @include tablet{
+            font-size: 1.65vw;
+        }
+        @include desktop{
+            font-size: 1.35vw;
+        }
+        @include xxl{
+            font-size: 1.33vw;
         }
     }
+     a{
+        @include tablet{
+            font-size: 1.8vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    } 
 }
