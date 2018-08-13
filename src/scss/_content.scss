@@ -1,14 +1,19 @@
 .content{
     margin:0 auto;
-    max-width: (100%/$columns * 9);
+    max-width: 100%;
     width:100%;
-    padding:0;
-    position:relative;
-    display: inline-block;
+    padding:1em 0 1em 0;
+    position:static;
     float:left;
+    display:block;
+    @include desktop{
+        display: inline-block;
+        max-width: (100%/$columns * 9);
+    }
+    
     div:first-of-type{
         width:100%;         
-        padding:1em;
+
         img{
             width:100%;
             margin:0 auto;
@@ -16,11 +21,14 @@
     }
 
     div:nth-of-type(n+3){
-        width:(100%/$columns * 7); 
-        padding:1em;
-        
-        display:inline-block;
-        vertical-align:top;
+        width:100%;       
+        display:block;
+        padding-top:2em;
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 7); 
+        }
         img{
             width:100%;
             margin:0 auto;
@@ -28,14 +36,58 @@
     }
 
     div:nth-child(even){
-        width:(100%/$columns * 5);
-        padding:1em;
-     
-        display:inline-block;
-        vertical-align:top;
+        width:100%;
+        padding-top:2em;
+
+        display:block;
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 5);
+            padding-right:1em;
+        }
+
         img{
             width:100%;
             margin:0 auto;
+        }
+    }
+    
+    p{
+        font-size: 2.5vw;
+        @include tablet{
+            font-size: 1.5vw;
+        }
+        @include desktop{
+            font-size: 1.3vw;
+        }
+        @include xxl{
+            font-size: 1.3vw;
+        }
+    } 
+    h1{
+        font-size: 3vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 2vw;
+        }
+        @include desktop{
+            font-size: 1.8vw;
+        }
+        @include xxl{
+            font-size: 1.6vw;
+        }
+    }
+    h3{
+         font-size: 2.7vw;
+        @include tablet{
+            font-size: 1.65vw;
+        }
+        @include desktop{
+            font-size: 1.35vw;
+        }
+        @include xxl{
+            font-size: 1.33vw;
         }
     }
 }

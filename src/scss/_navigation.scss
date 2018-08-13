@@ -11,6 +11,18 @@ nav {
             float: left;
             position: relative;
             a {
+
+                font-size: 3vw;
+                @include tablet{
+                    font-size: 2vw;
+                }
+                @include desktop{
+                    font-size: 1.5vw;
+                }
+                @include xxl{
+                    font-size: 1.1vw;
+                }
+
                 display: block;
                 padding: 0 20px;
                 line-height: 70px;
@@ -148,7 +160,17 @@ nav {
     float: left;
     line-height: (($nav-height)/2);
     font-size: 1.4em;
-
+    a{ font-size: 4vw;
+        @include tablet{
+            font-size: 3vw;
+        }
+        @include desktop{
+            font-size: 2.5vw;
+        }
+        @include xxl{
+            font-size: 1.7vw;
+        }
+    }
     a,
     a:visited {
         color: $nav-font-color;
