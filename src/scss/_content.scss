@@ -3,7 +3,7 @@
     margin:0 auto;
     max-width: 100%;
     width:100%;
-    padding:1em 0 1em 0;
+    padding:7em 1em 1em 0;
     position:static;
     float:left;
     display:block;
@@ -17,13 +17,18 @@
         text-align: center;
         display:flex;
         align-items: center;
-        justify-content: center;      
+        justify-content: center;     
+        padding-bottom: 3em;
+        padding-left:0px!important;
         img{           
             width:70%;
             margin:0 auto;
             float:right;
 
         }
+    }
+    div:nth-of-type(odd){
+        padding-left:1em;
     }
 
     div:nth-of-type(n+3){
