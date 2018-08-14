@@ -13,6 +13,8 @@ body {
     color:  $paragraph-text-color;
     font-family: $paragraph-font-family;
     text-style: none;
+   overflow-y: auto;
+    min-width: 320px;
 }
  
 footer {

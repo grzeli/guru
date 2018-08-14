@@ -3,6 +3,7 @@
     width:90%; 
     max-width:$grid-max-width;
     margin:0 auto;
+    padding-bottom: 2em;
     img{
         width:100%;
     }
@@ -19,6 +20,7 @@
         margin:0 auto;
         img{
             width:100%;
+            margin:0 auto;
         }
         @include tablet{
             display:inline-block;
@@ -36,12 +38,13 @@
 
 
 
-    .services-list{
+    .services-list{      
         background-color: $bg-color;
         list-style: none;
         display:block;
         li:nth-of-type(n){
             width: 100%;
+              
             @include tablet{
             display: inline-block;
             vertical-align:top;
@@ -51,6 +54,8 @@
         margin: 0em;
         padding:0;
         a{
+            color: $paragraph-text-color;
+            text-decoration: none;
             display:none;
             width: 100%;
             @include tablet{
@@ -64,6 +69,7 @@
 
     }
     
+    //rozmiary czcionek
     
         p{
         font-size: 2.3vw;
@@ -92,6 +98,7 @@
         }
     }
      a{
+       
         @include tablet{
             font-size: 1.8vw;
         }
