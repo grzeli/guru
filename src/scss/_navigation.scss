@@ -60,6 +60,11 @@ nav {
     }
 }
 
+.navigation {
+    height: $nav-height;
+    background: $nav-background;
+}
+
 .nav-container {
     max-width: $content-width;
     margin: 0 auto;
@@ -113,8 +118,6 @@ nav {
     display: none;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-
-
 }
 .nav-mobile {
     display: none;
@@ -139,7 +142,7 @@ nav {
         border-radius: 1px;
         height: 5px;
         width: 35px;
-        background: $nav-font-color;
+        background: #ffffff;
         position: absolute;
         display: block;
         content: ' ';
@@ -170,16 +173,31 @@ nav {
     .nav-mobile {
         display: inline-block;
     }
+    .nav--list{
+        float:right;
+        width:95%;
+          box-shadow: -5px 40px 15px 40px rgba(0, 0, 0, 0.5); //3 wartosc to rozmycie
+    }
     nav {
+        
         width: 100%;
-        padding: 1em 0 15px; // odpowiada za odstep pod navbarem//
+        padding: 0 0 15px; // odpowiada za odstep pod navbarem//
+
         ul {
             display: none;
             li {
+
                 float: none;
+                text-align: left;
                 a {
+                    background-color:#ffffff;
+                    color: $nav-background;
                     padding: 15px;
                     line-height: 20px;
+                    &:not(:only-child):after {
+                    padding-left: 4px;
+                    content: ' ▾';
+                } 
                 }
                 ul li a {
                     padding-left: 30px;
@@ -190,7 +208,9 @@ nav {
 
     .nav-dropdown {
         position: static;
+        box-shadow: 0 -2.5px 0 0 rgba(0, 0, 0, 0.15);
     }
+    
 }
 
 @media screen and (min-width: $breakpoint) {
@@ -199,10 +219,7 @@ nav {
     }
 }
 
-.navigation {
-    height: $nav-height;
-    background: $nav-background;
-}
+
 
 
 

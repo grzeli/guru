@@ -11,14 +11,18 @@
         display: inline-block;
         max-width: (100%/$columns * 9);
     }
-  
-    div:first-of-type{
-        width:100%;         
 
-        img{
-            width:100%;
+    div:first-of-type{
+        width:100%;  
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;      
+        img{           
+            width:70%;
             margin:0 auto;
-           
+            float:right;
+
         }
     }
 
@@ -34,7 +38,7 @@
         img{
             width:100%;
             margin:0 auto;
-           
+
         }
     }
 
@@ -48,16 +52,16 @@
             vertical-align:top;
             width:(100%/$columns * 5);
             padding-right:1em;
-             padding-top:2em;
+            padding-top:2em;
         }
 
         img{
             width:100%;
             margin:0 auto;
-            
+
         }
     }
-    
+
     p{
         font-size: 2.5vw;
         @include tablet{
@@ -84,7 +88,7 @@
         }
     }
     h3{
-         font-size: 2.7vw;
+        font-size: 2.7vw;
         @include tablet{
             font-size: 1.65vw;
         }
@@ -95,7 +99,7 @@
             font-size: 1.33vw;
         }
     }
-     a{
+    a{
         font-size: 3vw;
         @include tablet{
             font-size: 1.4vw;
