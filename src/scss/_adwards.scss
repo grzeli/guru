@@ -25,9 +25,9 @@
         @include xxl{
             font-size: 0.65vw;
         }
-       
+
     }
-    
+
     p{
         font-size: 2vw;
         text-transform: uppercase;
@@ -36,14 +36,15 @@
         }
         @include desktop{
             font-size: 1.2vw;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
         }
         @include xxl{
             font-size: 1vw;
         }
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; 
+
 
     }
     // div:nth-of-type(n){
@@ -55,7 +56,7 @@
         img{
             display:block;
             @include grid-images(1, 5%);
-            @include border-radius(1.5%);
+
             width:33%;
             float:left;
             padding-right:1em;

@@ -2,7 +2,6 @@ nav {
     float: left;
     margin:0 auto;
     max-height: $nav-height;
-
     ul {
         list-style: none;
         margin: 0;
@@ -11,7 +10,6 @@ nav {
             float: left;
             position: relative;
             a {
-
                 font-size: 3vw;
                 @include tablet{
                     font-size: 2vw;
@@ -22,10 +20,9 @@ nav {
                 @include xxl{
                     font-size: 1.1vw;
                 }
-
                 display: block;
                 padding: 0 20px;
-                line-height: 70px;
+                line-height:$nav-height;
                 background: $nav-background;
                 color: $nav-font-color;
                 text-decoration: none;
@@ -39,7 +36,7 @@ nav {
                 } 
             }
             ul li {
-                min-width: 190px;
+                min-width: 330px;
                 & a {
                     padding: 15px;
                     line-height: 20px;
@@ -48,6 +45,54 @@ nav {
             }
         }
     }
+}
+
+.nav-container {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.nav-brand {   
+    margin:0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+    background-color: $yellow;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    float: left;
+    line-height: (($nav-height)/2);
+    font-size: 1.4em;
+    a{ font-size: 4vw;
+        @include tablet{
+            font-size: 3vw;
+        }
+        @include desktop{
+            font-size: 2.5vw;
+        }
+        @include xxl{
+            font-size: 1.7vw;
+        }
+
+    }
+    a,
+    a:visited {
+        color: $nav-font-color;
+        text-decoration: none;
+    }
+    a:nth-of-type(2){
+        font-family: 'Luckiest Guy', cursive;
+        padding:0;
+        margin:0;
+    }
+    a:nth-of-type(1){
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        color: #000000;
+        padding:0;
+        margin:0;
+    }
+
 }
 
 .nav-dropdown {
@@ -144,53 +189,7 @@ nav {
     background: $nav-background;
 }
 
-.nav-container {
-    max-width: $content-width;
-    margin: 0 auto;
-}
 
-.brand {   
-    margin:0 auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 0;
-    background-color: $yellow;
-    text-align: center;
-    padding: 0 20px 0 20px;
-    float: left;
-    line-height: (($nav-height)/2);
-    font-size: 1.4em;
-    a{ font-size: 4vw;
-        @include tablet{
-            font-size: 3vw;
-        }
-        @include desktop{
-            font-size: 2.5vw;
-        }
-        @include xxl{
-            font-size: 1.7vw;
-        }
-    }
-    a,
-    a:visited {
-        color: $nav-font-color;
-        text-decoration: none;
-    }
 
-    #brand--lucky{
-        font-family: 'Luckiest Guy', cursive;
-        padding:0;
-        margin:0;
 
-    }
 
-    #brand--dancing{
-        font-family: 'Dancing Script', cursive;
-        font-weight: 700;
-        color: #000000;
-        padding:0;
-        margin:0;
-
-    }
-
-}
