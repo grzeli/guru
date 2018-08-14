@@ -8,11 +8,11 @@
     @include desktop{
         width:(100%/$columns * 3);
         position:relative;
-        float:right; //zmiena floata w celu obczj
+        float:left; //zmiena floata w celu obczj
         padding:1em;
-        
+
     }
-   
+
     h4{
         font-size: 1.6vw;
         line-height: 250%;
@@ -25,7 +25,9 @@
         @include xxl{
             font-size: 0.65vw;
         }
+       
     }
+    
     p{
         font-size: 2vw;
         text-transform: uppercase;
@@ -38,13 +40,18 @@
         @include xxl{
             font-size: 1vw;
         }
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
+
     }
     // div:nth-of-type(n){
     // }
     .adwards-container{
         display:inline-block;
         padding-bottom: 1em;
-        width:100%;
+        width:100%;        
         img{
             display:block;
             @include grid-images(1, 5%);
