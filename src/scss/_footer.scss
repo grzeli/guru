@@ -46,7 +46,8 @@
 
 
 
-    .services-list{      
+    .services-list{    
+       
         background-color: $bg-color;
         list-style: none;
         display:block;
@@ -139,6 +140,7 @@
 
     }
     h5{
+         font-weight: normal;
           font-size: 2.3vw;
         @include tablet{
             font-size: 1vw;

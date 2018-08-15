@@ -10,7 +10,7 @@
         position:relative;
         float:left; //zmiena floata w celu obczj
         padding:1em;
-        padding-top:5.6em;
+        padding-top:6.7em;
 
     }
 
@@ -28,20 +28,20 @@
         }
 
     }
-     h5{
+    h5{
         font-size: 2vw;
-        line-height: 250%;
+        font-weight: normal;
         @include tablet{
-            font-size: 1.4vw;
+            font-size: 1.45vw;
         }
         @include desktop{
-            font-size: 1.2vw;
+            font-size: 1.25vw;
         }
         @include xxl{
             font-size: 0.85vw;
         }
-
     }
+
 
     p{
         font-size: 2vw;

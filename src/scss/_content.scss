@@ -35,13 +35,13 @@
         }
     }
     div:nth-of-type(7){
-          @include tablet{
-        padding-bottom: 4em!important;
+        @include tablet{
+            padding-bottom: 4em!important;
         }
     }
     div:nth-of-type(6){
-          @include tablet{
-        padding-bottom: 4em!important;
+        @include tablet{
+            padding-bottom: 4em!important;
         }
     }
     div:nth-of-type(n+3){
@@ -52,6 +52,21 @@
             display:inline-block;
             vertical-align:top;
             width:(100%/$columns * 5); 
+             h2{
+                width:(100%/$columns * 3.2);
+                   margin-bottom: 1em;
+                 margin-top: 0;
+            }
+        }
+        @include desktop{
+            h2{
+                width:(100%/$columns * 3.7);
+            }
+        }
+        @include xxl{
+              h2{
+                width:(100%/$columns * 4);
+            }
         }
         img{
             width:100%;
@@ -71,6 +86,22 @@
             width:(100%/$columns * 7);
             padding-right:2em;
             padding-top:2em;
+            h2{
+                width:(100%/$columns * 2.5);
+                  margin:1em 0;
+            }
+        }
+        
+         @include desktop{
+            h2{
+                width:(100%/$columns * 2.7);
+            }
+        }
+        
+         @include xxl{
+              h2{
+                width:(100%/$columns * 3.15);
+            }
         }
 
         img{
@@ -161,6 +192,49 @@
         @include xxl{
             font-size: 1.33vw;
         }
+    }
+
+    h2{
+        padding:0;
+      
+        width:(100%/$columns * 2);
+        text-align: center;
+        text-transform:uppercase;
+        color:$nav-background;
+        background: $bg-footer-color;
+        font-weight: normal;
+        letter-spacing: .2vw;
+        line-height: 2.2em;
+        font-size: 1.9vw;        
+        @include tablet{           
+            font-size: 1.4vw;           
+        }
+        @include desktop{
+            font-size: 1.15vw;        
+        }
+        @include xxl{
+            font-size: 0.9vw;  
+        }
+    }
+
+
+    h4{
+
+        font-weight: normal;
+        text-transform: none;
+        font-size: 1.8vw;
+        line-height: 250%;
+        @include tablet{
+            padding:.5em 0;
+            font-size: 1.3vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+
     }
 
 
