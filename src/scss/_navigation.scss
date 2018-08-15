@@ -5,6 +5,24 @@ nav {
     hr{
         display:none;
     }
+    a{
+
+        font-family:  'Roboto Slab', serif;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical; 
+        font-size: 3vw;
+        @include tablet{
+            font-size: 2vw;
+        }
+        @include desktop{
+            font-size: 1.5vw;
+        }
+        @include xxl{
+            font-size: 1.1vw;
+        }
+    }
     ul {
         list-style: none;
         margin: 0;
@@ -13,28 +31,16 @@ nav {
             float: left;
             position: relative;
 
+
             a {
-                font-size: 3vw;
-                @include tablet{
-                    font-size: 2vw;
-                }
-                @include desktop{
-                    font-size: 1.5vw;
-                }
-                @include xxl{
-                    font-size: 1.1vw;
-                }
+
                 display: block;
                 padding: 0 20px;
                 line-height:$nav-height;
                 background: $nav-background;
                 color: $nav-font-color;
                 text-decoration: none;
-                &:hover {                   
-                    background: #ffffff;
-                    color: $nav-background;
 
-                }
                 &:not(:only-child):after {
                     padding-left: 4px;
                     content: ' ▾';
@@ -42,15 +48,12 @@ nav {
                 &:only-child:before{
                     content: '• ';
                     color: $yellow;
+
                 }
-                &:only-child{
-                    background: #ffffff;
-                    color: $nav-background;
-                    &:hover{
-                        background: $nav-background;
-                        color: #ffffff;
-                    }
-                }
+                &:not(:only-child){
+                    text-transform: uppercase;
+                }             
+
             }
             ul li {
                 min-width: 190px;
@@ -73,6 +76,13 @@ nav {
     max-width: $content-width;
     margin: 0 auto;
 }
+.nav--list{
+    a:focus{
+        background: #ffffff;
+        color:$nav-background;
+    }
+}
+
 
 .nav-brand {   
     margin:0 auto;
@@ -122,6 +132,9 @@ nav {
     display: none;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    a{
+        width:150%;
+    }
     a:last-of-type:before{                         
         content: '• ';
         color: $yellow;         
@@ -135,6 +148,7 @@ nav {
     a:last-of-type{
         background: #ffffff;
         color: $nav-background;
+        text-transform: none!important;
     }
 
 }
@@ -242,6 +256,7 @@ nav {
                         padding-left: 4px;
                         content: ' ▾';
                     } 
+
                     &:not(:only-child):focus ~ hr{
                         display:none;
                     }
