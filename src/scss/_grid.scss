@@ -5,6 +5,7 @@
     margin: 0 auto;
     width: 90%;
     max-width:$grid-max-width;  
+   
     @include tablet{
         width:95%;
     }
