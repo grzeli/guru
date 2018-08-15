@@ -13,9 +13,9 @@ body {
     color:  $paragraph-text-color;
     font-family: $paragraph-font-family;
     text-style: none;
- 
+
 }
- 
+
 footer {
     background-color: $bg-footer-color;
 }
@@ -24,19 +24,19 @@ img {
     @include border-radius(2px);
 }
 
- h5 {
-   width: 100%; 
-   text-align:left; 
-   border-bottom: 3px solid $yellow; 
-   line-height: 0.1em;
-   margin: 10px 0 20px; 
+h5 {
+    width: 100%; 
+    text-align:left; 
+    border-bottom: 3px solid $yellow; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;   
+    font-family: $paragraph-font-family;
   
-      font-family: $paragraph-font-family;
-    font-size: 1.2rem;
-   
+
 } 
 
 h5 span { 
     background:#fff; 
-    padding:0 10px;
+    padding:0;
+
 }
