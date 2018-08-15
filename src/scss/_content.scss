@@ -27,10 +27,23 @@
 
         }
     }
-    div:nth-of-type(odd){
-        padding-left:1em;
+    div:nth-of-type(4){
+        @include tablet{
+            float:right!important;
+            padding-left:2em;
+            padding-right: 0!important;
+        }
     }
-
+    div:nth-of-type(7){
+          @include tablet{
+        padding-bottom: 4em!important;
+        }
+    }
+    div:nth-of-type(6){
+          @include tablet{
+        padding-bottom: 4em!important;
+        }
+    }
     div:nth-of-type(n+3){
         width:100%;       
         display:block;
@@ -38,7 +51,7 @@
         @include tablet{
             display:inline-block;
             vertical-align:top;
-            width:(100%/$columns * 7); 
+            width:(100%/$columns * 5); 
         }
         img{
             width:100%;
@@ -55,8 +68,8 @@
         @include tablet{
             display:inline-block;
             vertical-align:top;
-            width:(100%/$columns * 5);
-            padding-right:1em;
+            width:(100%/$columns * 7);
+            padding-right:2em;
             padding-top:2em;
         }
 
@@ -64,9 +77,54 @@
             width:100%;
             margin:0 auto;
 
+
         }
     }
+    div:last-of-type{
+        @include border-box; 
+        .btn{
+            @include button($bg-color, $bg-color, black);
+            a{
+                font-size: 3vw!important;
+                @include tablet{
+                    font-size: 1.4vw!important;
+                }
+                @include desktop{
+                    font-size: 1.25vw!important;
+                }
+                @include xxl{
+                    font-size: 1.23vw!important;
+                }
+            }
+        }
+        height:100%;
+        border: solid;
+        border-color: $yellow;
+        border-width: 2px;
+        width:75%;
+        text-align: center;
+        padding:.5em!important;      
+        margin:0 auto;
+        @include tablet{
+            width:(100%/$columns *7);
+            float:right;            
+            margin:0;
 
+        }
+        a{
+            font-size: 3vw!important;
+            @include tablet{
+                font-size: 1.4vw!important;
+            }
+            @include desktop{
+                font-size: 1.25vw!important;
+            }
+            @include xxl{
+                font-size: 1.23vw!important;
+            }
+        }
+
+    }
     p{
         font-size: 2.5vw;
         @include tablet{
@@ -104,6 +162,8 @@
             font-size: 1.33vw;
         }
     }
+
+
     a{
         font-size: 3vw;
         @include tablet{
