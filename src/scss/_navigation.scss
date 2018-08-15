@@ -170,47 +170,61 @@ nav {
 }
 
 @media only screen and (max-width: $breakpoint) {
-    .nav-mobile {
+    .nav-mobile {       
         display: inline-block;
     }
+    .navigation{
+        position:fixed;
+        width:100%;
+        
+    }
     .nav--list{
-        float:right;
+         overflow-y: hidden;
+    
+        height:100%;
+        position:fixed;
+        z-index: 1;
+        right:0;
+        overflow-x: hidden;
+        background-color:#ffffff;
         width:95%;
-          box-shadow: -50px 0 15px 0 rgba(0, 0, 0, 0.5); //3 wartosc to rozmycie
+        box-shadow: -50px 0 0 0 rgba(0, 0, 0, 0.5); //3 wartosc to rozmycie
     }
     nav {
-        
+
+        height:100%;
         width: 100%;
         padding: 0 0 15px; // odpowiada za odstep pod navbarem//
 
         ul {
             display: none;
             li {
-
                 float: none;
                 text-align: left;
                 a {
+
                     background-color:#ffffff;
                     color: $nav-background;
                     padding: 15px;
                     line-height: 20px;
                     &:not(:only-child):after {
-                    padding-left: 4px;
-                    content: ' ▾';
-                } 
+                        padding-left: 4px;
+                        content: ' ▾';
+                    } 
                 }
                 ul li a {
                     padding-left: 30px;
                 }
             }
         }
+
     }
 
     .nav-dropdown {
         position: static;
         box-shadow: 0 -2.5px 0 0 rgba(0, 0, 0, 0.15);
     }
-    
+
 }
 
 @media screen and (min-width: $breakpoint) {
