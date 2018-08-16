@@ -1,46 +1,264 @@
-.content { 
-    @include clearfix; 
-   
-   
-    
-    li.image-container{
-        float: top;
-        list-style: none;
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto !important; 
-            @include border-radius(10px);
+.content{
+    @include clearfix;
+    margin:0 auto;
+    max-width: 100%;
+    width:100%;
+    padding:1em 1em 1em 0;
+    position:static;
+    float:left;
+    display:block;
+    @include tablet{
+        padding:7em 1em 1em 0;
+    }
+    @include desktop{
+        display: inline-block;
+        max-width: (100%/$columns * 9);
+    }
+
+    div:first-of-type{
+        width:100%;  
+
+        padding-bottom: 3em;
+        padding-left:0px!important;
+        @include tablet{
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;     
         }
-        @include tablet {
-            @include grid-images(1, 0);
-            img {
-                display: block;              
-                max-width: 100%;
-                height: auto !important; 
-                @include border-radius(10px);
+        img{           
+            width:100%;
+            float:bottom;
+            margin:1em auto;
+            @include tablet{
+                float:right;
+                width:70%;
+            }
+
+
+        }
+    }
+    div:nth-of-type(4){
+        @include tablet{
+            float:right!important;
+            padding-left:2em;
+            padding-right: 0!important;
+        }
+    }
+    div:nth-of-type(7){
+        @include tablet{
+            padding-bottom: 4em!important;
+        }
+    }
+    div:nth-of-type(6){
+        @include tablet{
+            padding-bottom: 4em!important;
+        }
+    }
+    div:nth-of-type(n+3){
+        width:100%;       
+        display:block;
+        padding-top:2em;
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 5); 
+            h2{
+                width:(100%/$columns * 3.2);
+                margin-bottom: 1em;
+                margin-top: 0;
             }
         }
-    }
-  
-}
+        @include desktop{
+            h2{
+                width:(100%/$columns * 3.7);
+            }
+        }
+        @include xxl{
+            h2{
+                width:(100%/$columns * 4);
+            }
+        }
+        img{
+            width:100%;
+            margin:0 auto;
 
-
-
-
-@include tablet {
-    @for $i from 1 through $columns {
-        .medium-colum-#{$i} {
-            width: 100% / $columns * $i;
         }
     }
-}
 
-@include desktop {
-    @for $i from 1 through $columns {
-        .large-colum-#{$i} {
-            width: 100% / $columns * $i;
+    div:nth-child(even){
+        width:100%;
+        padding-top:7em;
+
+        display:block;
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 7);
+            padding-right:2em;
+            padding-top:2em;
+            h2{
+                width:(100%/$columns * 2.5);
+                margin:1em 0;
+            }
+        }
+
+        @include desktop{
+            h2{
+                width:(100%/$columns * 2.7);
+            }
+        }
+
+        @include xxl{
+            h2{
+                width:(100%/$columns * 3.15);
+            }
+        }
+
+        img{
+            width:100%;
+            margin:0 auto;
+
+
         }
     }
-}
+    div:last-of-type{
+        @include border-box; 
+        .btn{
+            @include button($bg-color, $bg-color, black);
+            a{
+                font-size: 3vw!important;
+                @include tablet{
+                    font-size: 1.4vw!important;
+                }
+                @include desktop{
+                    font-size: 1.25vw!important;
+                }
+                @include xxl{
+                    font-size: 1.23vw!important;
+                }
+            }
+        }
+        height:100%;
+        border: solid;
+        border-color: $yellow;
+        border-width: 2px;
+        width:75%;
+        text-align: center;
+        padding:.5em!important;      
+        margin:0 auto;
+        @include tablet{
+            width:(100%/$columns *7);
+            float:right;            
+            margin:0;
 
+        }
+        a{
+            font-size: 3vw!important;
+            @include tablet{
+                font-size: 1.4vw!important;
+            }
+            @include desktop{
+                font-size: 1.25vw!important;
+            }
+            @include xxl{
+                font-size: 1.23vw!important;
+            }
+        }
+
+    }
+    p{
+        font-size: 2.5vw;
+        @include tablet{
+            font-size: 1.5vw;
+        }
+        @include desktop{
+            font-size: 1.3vw;
+        }
+        @include xxl{
+            font-size: 1.3vw;
+        }
+    } 
+    h1{
+        font-size: 3vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 2vw;
+        }
+        @include desktop{
+            font-size: 1.8vw;
+        }
+        @include xxl{
+            font-size: 1.6vw;
+        }
+    }
+    h3{
+        font-size: 2.7vw;
+        @include tablet{
+            font-size: 1.65vw;
+        }
+        @include desktop{
+            font-size: 1.35vw;
+        }
+        @include xxl{
+            font-size: 1.33vw;
+        }
+    }
+
+    h2{
+        padding:0;
+
+        width:(100%/$columns * 2);
+        text-align: center;
+        text-transform:uppercase;
+        color:$nav-background;
+        background: $bg-footer-color;
+        font-weight: normal;
+        letter-spacing: .2vw;
+        line-height: 2.2em;
+        font-size: 1.9vw;        
+        @include tablet{           
+            font-size: 1.4vw;           
+        }
+        @include desktop{
+            font-size: 1.15vw;        
+        }
+        @include xxl{
+            font-size: 0.9vw;  
+        }
+    }
+
+
+    h4{
+
+        font-weight: normal;
+        text-transform: none;
+        font-size: 1.8vw;
+        line-height: 250%;
+        @include tablet{
+            padding:.5em 0;
+            font-size: 1.3vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+
+    }
+
+
+    a{
+        font-size: 3vw;
+        @include tablet{
+            font-size: 1.4vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 1.23vw;
+        }
+    } 
+}

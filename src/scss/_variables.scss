@@ -17,7 +17,7 @@ $text-autor-color:       rgba(0, 0, 0, 0.6);
 
 
 $paragraph-text-color:   #464646;
-$paragraph-font-size:    1rem;
+$paragraph-font-size:    .9vw;
 $paragraph-font-family:  'Lato', sans-serif;
 $paragraph-font-weight:    normal;
 $paragraph-font-style:     normal;
@@ -32,8 +32,8 @@ $anchor-font-family:'Lato', sans-serif;
 
 
 //grid
+
 $columns:        12;
-$grid-min-width: 320px; // poniżej takiej szerokości ekranu wyświetla się horizontal scroll
 $grid-max-width: 1400px;
 $breakpoints: (
     // od 0 do 575 phone
@@ -44,7 +44,7 @@ $breakpoints: (
     phone:       576px, 
     tablet:      768px,
     desktop:     992px,
-    xxl:         1200px
+    xxl:         1200px,
 );
 //columns
 $c1:1;
@@ -62,8 +62,8 @@ $c12:12;
 
 
 //navigation
-$content-width: 1200px;
-$breakpoint: 799px;
+$content-width: $grid-max-width;
+$breakpoint: 768px;
 $nav-height: 72px;
 $nav-background: $nav-bar-color;
 $nav-font-color: $bg-color;

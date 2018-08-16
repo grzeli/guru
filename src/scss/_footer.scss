@@ -1,72 +1,230 @@
 .footer{
-    @include clearfix; 
-    float: left;
-    padding-left:0;
-    padding-top:1em;
-    padding-bottom: 0;
-    display: inline-block;
-    li.image-container{
-        float: top;
-        list-style: none;
-        img {
-            display: block;
-            max-width: 100%;
-            @include border-radius(10px);
+    @include clearfix;
+    @include border-box;
+    width:90%; 
+    max-width:$grid-max-width;
+    margin:4em auto;
+    display: block;
+
+    @include tablet{
+        width:95%;
+    }
+    @include desktop{
+        width:100%;
+    }
+    div:nth-of-type(n){
+        display:inline-block!important; 
+        width:100%;      
+        margin:0 auto;
+        padding: 4em 0;
+        h4, h3 {
+            display:inline-block;
+            float:right;
+            width:67%;
         }
-        @include tablet {
-            @include grid-images(1, 5%);
-            img {
-                display: block;
-                max-width: 100%;
-                max-height: 400px;
-                @include border-radius(10px);
+        h2, p{
+            display:none;
+        }
+        img{
+            display:block;
+            @include grid-images(1, 1%);
+            width:33%;
+            float:top;
+            
+        }
+        @include tablet{
+            display:inline-block;
+            vertical-align:top;
+            width:(100%/$columns * 4);
+            padding-bottom: 2em!important;
+            padding-top: 2em!important;
+            h4, h3 {
+             
+                float:none;
+                width:67%;
+            }
+            h2, p{
+                display:block;
+            }
+            img{
+                width:100%;
+            }
+
+        }
+    }
+    div:first-of-type{
+        width:100%;
+        padding:3em 0;
+    }
+    div:nth-of-type(2){
+        @include tablet{
+            padding-right: 2em;
+            padding-left: 1em;
+        }
+    }
+    div:last-of-type{
+        @include tablet{
+            padding-left:2em;
+            padding-right:1em;
+        }
+    }
+
+
+
+    .services-list{    
+
+        background-color: $bg-color;
+        list-style: none;
+        display:block;
+        li:nth-of-type(n){
+            width: 100%;
+            @include tablet{
+                display: inline-block;
+                vertical-align:top;
+                width:(100%/$columns * 4);
+
             }
         }
-    }  
- h2 {
-   width: 100%; 
-   text-align:left; 
-   border-bottom: 3px solid $yellow; 
-   line-height: 0.1em;
-   margin: 10px 0 20px; 
-} 
+        li:nth-of-type(n){
+            padding-right: 2em;
+            padding-top:3em;
+        }
+        li:nth-of-type(n){
+            span{
+                padding-right:2em;
+            }
 
-h2 span { 
-    background:#fff; 
-    padding:0 10px; 
-}
-}
+        }
 
 
-
-.services-list{
-    @include clearfix;
-    background-color: $bg-color;
-    list-style: none;
-    display:block;
-    @include tablet {
         margin: 0em;
-        width: 100%;
-        max-width: $grid-max-width;
+        padding:0;
+        a{
+            color: $paragraph-text-color;
+            text-decoration: none;
+            display:none;
+            width: 100%;
+            @include tablet{
+                display: block;
+                vertical-align:top;
+                padding:.1em;
+                line-height: 2em;
+            }
+
+        }
+        h5 span{
+            background-color: #ffffff;
+        }
 
     }
 
+    //rozmiary czcionek
 
-    #guru3{
-        text-align: left; 
-        align-items: left;
-        justify-content: center;       
-        display: block;
+    h2{
+        padding:0;      
+        width:15%;
+        text-align: center;
+        text-transform:uppercase;
+        color:$nav-background;
+        background: #ffffff;
+        font-weight: normal;
+        letter-spacing: .2vw;
+        line-height: 2.2em;
+        font-size: 1.9vw;        
+        @include tablet{           
+            font-size: 1.4vw;  
+            width:35%;
+        }
+        @include desktop{
+            font-size: 1.15vw; 
+            width:30%;
+        }
+        @include xxl{
+            font-size: 0.9vw; 
+            width:32%;
 
-    }
-    a {
-        color: #2b2b2b;
-        font-size: 0.8rem;
-        text-decoration: none;
-        display: block;
-        margin: 0.4em;
-        &:first-of-type{
-            margin-top: 1em;
         }
     }
+
+
+    h4{
+
+        font-weight: normal;
+        text-transform: none;
+        font-size: 1.8vw;
+        padding:2em 0;
+
+        @include tablet{
+            padding:.8em 0;
+            font-size: 1.3vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+
+    }
+
+    p{
+        font-size: 2.3vw;
+        @include tablet{
+            font-size: 1.35vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    } 
+
+
+    h3{
+        font-size: 2.7vw;
+        @include tablet{
+            font-size: 1.65vw;
+        }
+        @include desktop{
+            font-size: 1.35vw;
+        }
+        @include xxl{
+            font-size: 1.33vw;
+        }
+    }
+    a{
+
+        @include tablet{
+            font-size: 1.8vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    } 
+    h5 span{
+        text-transform: uppercase;
+        background-color: $bg-footer-color;
+
+
+    }
+    h5{
+        font-weight: normal;
+        font-size: 2.3vw;
+        @include tablet{
+            font-size: 1vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: .7vw;
+        }
+    }
+
+
+
 }

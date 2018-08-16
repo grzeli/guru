@@ -1,107 +1,99 @@
 .adwards{
     @include clearfix;
-    @include border-box;    
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 15px;
-    h4{
-        font-size: 0.8vw;
+    @include border-box;
+    padding-top:7em;
+    max-width: $grid-max-width;
+    width:100%;
+    margin: 0 auto;
+    @include desktop{
+        width:(100%/$columns * 3);
+        position:relative;
+        float:left; //zmiena floata w celu obczj
+        padding:1em;
+        padding-top:6.7em;
+
     }
-    p{
-        font-size: 1vw;
-        text-transform:uppercase;
-        font-family: $paragraph-font-family;
+
+    h4{
+        font-size: 1.6vw;
+        line-height: 250%;
         @include tablet{
-            font-size: 1.5vw;
+            font-size: 1.2vw;
         }
         @include desktop{
-            font-size: 2vw;
+            font-size: 1.0vw;
+        }
+        @include xxl{
+            font-size: 0.65vw;
         }
 
     }
-}
-.adwards-container{    
-    @include border-box;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 0;
-    margin: 0 auto;
-    padding-bottom: 1em;    
-    width:100%;
-
-    li.image-container{
-        @include clearfix;       
-        max-width: 100%;
-        padding: 0.2em;
-        display:block;
-        list-style: none;
-        img{            
-            max-width:100%;
-            @include border-radius(10px);
-        }
-        @include tablet {
-            @include grid-images(1, 1%);
-            margin-bottom:auto;
-            max-width: 100%;
-            margin-right: .4em;
-        }
-
-    }
-
-}
-
-.adwards-sign{
-    display: block;
-    position: relative;
-    @include tablet{
-        line-height: normal;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: stretch;
-        align-content: space-between;
-    }
-    #podpis {
-        display: inline-block;
-        position: absolute;
-        bottom:-1em;;
-        right:0;
-        text-align: left;
+    h5{
+        font-size: 2vw;
+        font-weight: normal;
         @include tablet{
-            position:static;
-            display:flex;
-            // align-self: flex-end;  
+            font-size: 1.45vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
         }
     }
-}
 
 
+    p{
+        font-size: 2vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 1.4vw;
+        }
+        @include desktop{
+            font-size: 1.2vw;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
 
-.adwards-image{
-    hover{
 
     }
-
-    display: block;
-    li.image-container{
-        padding: .2em;
-        float: top;
-        list-style: none;
-
-        img {
+    // div:nth-of-type(n){
+    // }
+    .adwards-container{
+        display:inline-block;
+        padding-bottom: 2em;
+        width:100%;        
+        img{
+            display:block;
+            @include grid-images(1, 5%);
+            width:33%;
+            float:left;
+            padding-right:1em;
+        }
+    }
+    .adwards-image{
+        position:static;
+        margin:0 auto;
+        padding:0 0 1em 0;      
+        img{
             display: block;
-            max-width: 100%;
-            height: auto !important; 
-            @include border-radius(10px);
-        }
-        @include tablet {
-            margin-bottom: auto;
-            @include grid-images(1, 2%);
-            img {
-
-                max-width: 100%;
-                @include border-radius(10px);
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            @include desktop{
+                width:100%;
             }
         }
     }
 }
+
+
+
+
+
+
