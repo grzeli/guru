@@ -1,12 +1,16 @@
 (function($) {
     $(function() {
         $('.footer ul li  > h5').click(function(e) {
-            $(this).siblings('.p').toggle();
-            $('.p').not($(this).siblings()).hide();
-            e.stopPropagation();
+            if ($( window ).width() < 576) {
+                $(this).siblings('.p').toggle();
+                $('.p').not($(this).siblings()).hide();
+                e.stopPropagation();
+            }
         });
         $('html').click(function() {
-            $('.p').hide();
+            if ($( window ).width() < 576) {
+                $('.p').hide();
+            }
         });
     });
   
