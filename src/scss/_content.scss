@@ -3,10 +3,13 @@
     margin:0 auto;
     max-width: 100%;
     width:100%;
-    padding:7em 1em 1em 0;
+    padding:1em 1em 1em 0;
     position:static;
     float:left;
     display:block;
+    @include tablet{
+        padding:7em 1em 1em 0;
+    }
     @include desktop{
         display: inline-block;
         max-width: (100%/$columns * 9);
@@ -14,16 +17,24 @@
 
     div:first-of-type{
         width:100%;  
-        text-align: center;
-        display:flex;
-        align-items: center;
-        justify-content: center;     
+
         padding-bottom: 3em;
         padding-left:0px!important;
+        @include tablet{
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;     
+        }
         img{           
-            width:70%;
-            margin:0 auto;
-            float:right;
+            width:100%;
+            float:bottom;
+            margin:1em auto;
+            @include tablet{
+                float:right;
+                width:70%;
+            }
+
 
         }
     }
@@ -52,10 +63,10 @@
             display:inline-block;
             vertical-align:top;
             width:(100%/$columns * 5); 
-             h2{
+            h2{
                 width:(100%/$columns * 3.2);
-                   margin-bottom: 1em;
-                 margin-top: 0;
+                margin-bottom: 1em;
+                margin-top: 0;
             }
         }
         @include desktop{
@@ -64,7 +75,7 @@
             }
         }
         @include xxl{
-              h2{
+            h2{
                 width:(100%/$columns * 4);
             }
         }
@@ -88,18 +99,18 @@
             padding-top:2em;
             h2{
                 width:(100%/$columns * 2.5);
-                  margin:1em 0;
+                margin:1em 0;
             }
         }
-        
-         @include desktop{
+
+        @include desktop{
             h2{
                 width:(100%/$columns * 2.7);
             }
         }
-        
-         @include xxl{
-              h2{
+
+        @include xxl{
+            h2{
                 width:(100%/$columns * 3.15);
             }
         }
@@ -196,7 +207,7 @@
 
     h2{
         padding:0;
-      
+
         width:(100%/$columns * 2);
         text-align: center;
         text-transform:uppercase;

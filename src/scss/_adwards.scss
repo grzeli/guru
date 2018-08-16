@@ -71,7 +71,6 @@
         img{
             display:block;
             @include grid-images(1, 5%);
-
             width:33%;
             float:left;
             padding-right:1em;

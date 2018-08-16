@@ -45,6 +45,7 @@ nav {
                     padding-left: 4px;
                     content: ' ▾';
                 } 
+            
                 &:only-child:before{
                     content: '• ';
                     color: $yellow;
