@@ -35,12 +35,12 @@
     }
     div:nth-of-type(2){
         @include tablet{
-        padding-right: 1em;
+        padding-right: 2em;
         }
     }
     div:last-of-type{
         @include tablet{
-        padding-left:1em;
+        padding-left:2em;
         }
     }
 
@@ -61,12 +61,12 @@
             }
         }
         li:nth-of-type(n){
-            padding-right: 1em;
+            padding-right: 2em;
             padding-top:3em;
         }
         li:nth-of-type(n){
             span{
-                padding-right:1em;
+                padding-right:2em;
             }
           
         }
