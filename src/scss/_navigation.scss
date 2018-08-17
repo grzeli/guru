@@ -243,6 +243,7 @@ nav {
                 overflow-x: none;            
                 width:100%!important;
                 box-shadow: none!important; //3 wartosc to rozmycie 
+                display:none;
             }
 
         }
@@ -259,6 +260,7 @@ nav {
                 width:95%;
                 border-color: #d8d8d8;
                 margin:0 auto;
+
 
                 a {
 
@@ -283,10 +285,12 @@ nav {
                 ul li a {
                     padding-left: 30px;
 
+
                 }
                 ul{
                     li{
                         border-bottom: none!important;
+
                     }
                 }
             }
@@ -296,11 +300,12 @@ nav {
 
     #nav-dropdown {
         position: static;
+        display:none;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
         border-bottom: none;
         border-left:none;
         border-right:none;
-
+        ul:not(active);
     }
 
 }

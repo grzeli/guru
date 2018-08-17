@@ -31,7 +31,7 @@
             width:33%;
             float:top;
             margin: 1em auto;
-            
+
         }
         @include tablet{
             display:inline-block;
@@ -40,7 +40,7 @@
             padding-bottom: 2em!important;
             padding-top: 2em!important;
             h4, h3 {
-             
+
                 float:none;
                 width:67%;
             }
@@ -55,12 +55,12 @@
     }
     div:first-of-type{       
         padding:3em 0;
-         @include tablet{
+        @include tablet{
             padding-right: 2em;
             padding-left: 1em;
         }
     }
-  
+
     div:last-of-type{
         @include tablet{
             padding-left:2em;
@@ -70,52 +70,7 @@
 
 
 
-    .services-list{    
 
-        background-color: $bg-color;
-        list-style: none;
-        display:block;
-        li:nth-of-type(n){
-            width: 100%;
-            @include tablet{
-                display: inline-block;
-                vertical-align:top;
-                width:(100%/$columns * 4);
-
-            }
-        }
-        li:nth-of-type(n){
-            padding-right: 2em;
-            padding-top:3em;
-        }
-        li:nth-of-type(n){
-            span{
-                padding-right:2em;
-            }
-
-        }
-
-
-        margin: 0em;
-        padding:0;
-        a{
-            color: $paragraph-text-color;
-            text-decoration: none;
-            display:none;
-            width: 100%;
-            @include tablet{
-                display: block;
-                vertical-align:top;
-                padding:.1em;
-                line-height: 2em;
-            }
-
-        }
-        h5 span{
-            background-color: #ffffff;
-        }
-
-    }
 
     //rozmiary czcionek
 
@@ -193,7 +148,7 @@
         }
     }
     a{
-
+        font-size: 2.5vw;
         @include tablet{
             font-size: 1.8vw;
         }
@@ -221,10 +176,52 @@
             font-size: 1.1vw;
         }
         @include xxl{
-            font-size: .7vw;
+            font-size: .9vw;
         }
     }
 
+    ul{  
+        width:100%;
+        margin:0 auto;
+        max-width:$grid-max-width;
+        text-align: left;
+        list-style: none;
+        text-decoration: none;
+        display:block;
 
+        a{
+            text-decoration: none;
+            font-weight: normal;
+            color:$nav-background;
+        }
+        li{ 
+            padding:1em 0;
+            ul{ 
+                display:none;
+                li{ 
+                    padding:0;
+                }
+            }
+            @include tablet{
+                display:inline-block;
+                width:(100%/$columns * 4);
+                ul{
+
+                    display:block;
+                    li{
+
+                        padding:.3em 1em;
+                        display:block;
+                        width:100%;
+
+                    }
+                }
+            }
+        }
+        h5 span{
+            background-color: #ffffff;
+        }
+
+    }
 
 }
