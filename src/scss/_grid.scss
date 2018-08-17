@@ -1,13 +1,14 @@
 .container{
      @include clearfix;
     position: static;   
-    padding: 0 1em;;
+    padding: 0 1em;
     margin: 0 auto;
     width: 90%;
     max-width:$grid-max-width;  
     padding-bottom: 5em;   
     @include tablet{
         width:95%;
+        padding: 0;
     }
     @include desktop{
         width:100%;

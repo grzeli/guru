@@ -6,7 +6,7 @@ nav {
         display:none;
     }
     a{
-
+        font-weight: normal;
         font-family:  'Roboto Slab', serif;
         overflow: hidden;
         display: -webkit-box;
@@ -128,7 +128,7 @@ nav {
 
 }
 
-.nav-dropdown {
+#nav-dropdown {
     position: absolute;
     display: none;
     z-index: 1;
@@ -244,6 +244,7 @@ nav {
                 width:100%!important;
                 box-shadow: none!important; //3 wartosc to rozmycie 
             }
+
         }
 
         ul {
@@ -252,7 +253,13 @@ nav {
 
             li {
                 float: none;
-                text-align: left;
+                text-align: left;  
+                border-bottom: solid;
+                border-width: 1px;
+                width:95%;
+                border-color: #d8d8d8;
+                margin:0 auto;
+
                 a {
 
                     background-color:#ffffff;
@@ -276,18 +283,23 @@ nav {
                 ul li a {
                     padding-left: 30px;
 
-
+                }
+                ul{
+                    li{
+                        border-bottom: none!important;
+                    }
                 }
             }
         }
 
     }
 
-    .nav-dropdown {
+    #nav-dropdown {
         position: static;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
         border-bottom: none;
         border-left:none;
+        border-right:none;
 
     }
 
