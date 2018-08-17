@@ -8,7 +8,7 @@
             }
         });
         $('html').click(function() {
-            if($(window).width() < 576){
+            if($(window).width() < 576 ){
             $('#services-list').hide();
             }
         });
