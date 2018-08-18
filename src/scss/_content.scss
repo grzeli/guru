@@ -30,7 +30,7 @@
             display:none;
         }
         max-width:100%!important;
-        width:100%!important;
+        width:90!important;
         display:flex!important;      
         background-color: white!important;
         flex-direction: row!important;
@@ -43,10 +43,25 @@
             height:100%!important;
             margin:0 auto!important;
             order:1!important;
-
-
+        }  
+        @include tablet{
+            width:100%!important;
         }
 
+    }
+
+    div:nth-of-type(2){        
+            width:100%!important;       
+        @include tablet{
+            width:(100%/$columns * 7)!important ;      
+           
+        }
+    }
+    div:nth-of-type(n){
+        @include phone{
+            width:90%;
+            margin:0 auto;
+        }
     }
 
     div:nth-of-type(even){
