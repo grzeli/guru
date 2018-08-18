@@ -57,14 +57,16 @@
     div:first-of-type{       
         padding:3em 0;
         @include tablet{
-            padding-right: 2em;
+            padding-right: 1em;
             padding-left: 1em;
         }
     }
-
+    div:nth-of-type(2){
+        padding:0 1em;
+    }
     div:last-of-type{
         @include tablet{
-            padding-left:2em;
+            padding-left:1em;
             padding-right:1em;
         }
     }
@@ -139,6 +141,9 @@
 
 
     h3{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
         font-size: 2.7vw;
         @include tablet{
             font-size: 1.65vw;
