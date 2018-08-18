@@ -1,154 +1,117 @@
 .content{
     @include clearfix;
     margin:0 auto;
-    max-width: 100%;
     width:100%;
     padding:1em 1em 1em 0;
-    position:static;
-    float:left;
-    display:block;
+    position:static;  
     @include tablet{
         padding:7em 1em 1em 0;
-        position:relative;
+        display:inline-block;
+        vertical-align: top;
     }
     @include desktop{
-        display: inline-block;
         max-width: (100%/$columns * 9);
+
+    }
+    img{
+        width:100%;
+        height:100%;
+        margin:0 auto;
+    }
+    div:nth-of-type(n){
+        padding-bottom: 5em;
+        @include tablet{
+            padding-bottom:0em;
+        }
     }
 
     div:first-of-type{
         h2, h4, p, a{
             display:none;
         }
-        width:100%; 
-        padding-bottom: 3em;
-        padding-left:0px!important;
-        @include tablet{
-            margin:auto;
-            text-align: center;
-            display:inline-block;  
-            height: 100%;
-
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center; 
-
+        max-width:100%!important;
+        width:100%!important;
+        display:flex!important;      
+        background-color: white!important;
+        flex-direction: row!important;
+        align-items: center!important;
+        height:100%;
+        padding:0 0 5em 0!important;
+        img{
+            max-width:100%!important;
+            width:70%!important;
+            height:100%!important;
+            margin:0 auto!important;
+            order:1!important;
 
 
         }
-        img{           
-            width:100%;
-            float:bottom;
-            margin:0 auto;
-            @include tablet{
-                width:70%;
-                float:right!important;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                height: 100%;
-                -webkit-box-align: right;
-                -ms-flex-align: right;
-                align-items: right;
-                -webkit-box-pack: right;
-                -ms-flex-pack: right;
-                justify-content: right;
+
+    }
+
+    div:nth-of-type(even){
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        @include tablet{
+            width:(100%/$columns * 7);
+            text-align: left;
+            display:flex;
+            float:left;
+            flex-direction: column;
+            justify-content: center;
+            margin:0;
+            padding-right:1em;
+            padding-bottom: 4em;
+            img{
+                width:100%;
+                height:100%;
             }
-
-
         }
     }
+
+    div:nth-of-type(odd){
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        img, a{
+            width:100%;
+            height:100%;
+            order:1;
+        }
+
+        @include tablet{
+            max-width: (100%/$columns * 5);
+            width:100%;
+            text-align: left;
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin:0;
+            padding-left:1em; 
+            padding-bottom: 4em;            
+        }
+    }
+
     div:nth-of-type(4){
         @include tablet{
             float:right!important;
-            padding-left:2em;
-            padding-right: 0!important;
+            padding-right:0em!important;
+            padding-left:1em!important;
+
         }
     }
-    div:nth-of-type(7){
+    div:nth-of-type(5){
         @include tablet{
-            padding-bottom: 4em!important;
-        }
-    }
-    div:nth-of-type(6){
-        @include tablet{
-            padding-bottom: 4em!important;
-        }
-    }
-    div:nth-of-type(n+3){
-        width:100%;       
-        display:block;
-        padding-top:2em;
-        @include tablet{
-            display:inline-block;
-            vertical-align:top;
-            width:(100%/$columns * 5); 
-            h2{
-                width:(100%/$columns * 3.2);
-                margin-bottom: 1em;
-                margin-top: 0;
-            }
-        }
-        @include desktop{
-            h2{
-                width:(100%/$columns * 3.7);
-            }
-        }
-        @include xxl{
-            h2{
-                width:(100%/$columns * 4);
-            }
-        }
-        img{
-            width:100%;
-            margin:0 auto;
+            float:right!important;
+            padding-right:1em!important;
+            padding-left:0em!important;
 
         }
     }
 
-    div:nth-child(even){
-        width:100%;
-        padding-top:7em;
-
-        display:block;
-        @include tablet{
-            display:inline-block;
-            vertical-align:top;
-            width:(100%/$columns * 7);
-            padding-right:2em;
-            padding-top:2em;
-            h2{
-                width:(100%/$columns * 2.5);
-                margin:1em 0;
-            }
-        }
-
-        @include desktop{
-            h2{
-                width:(100%/$columns * 2.7);
-            }
-        }
-
-        @include xxl{
-            h2{
-                width:(100%/$columns * 3.15);
-            }
-        }
-
-        img{
-            width:100%;
-            margin:0 auto;
 
 
-        }
-    }
     div:last-of-type{
         @include border-box; 
         .btn{
@@ -171,14 +134,14 @@
         border-color: $yellow;
         border-width: 2px;
         width:75%;
-        text-align: center;
+        text-align: center!important;
         padding:.5em!important;      
-        margin:0 auto;
+        margin:2em auto;
+        align-items:center;
         @include tablet{
-            width:(100%/$columns *7);
-            float:right;            
-            margin:0;
-
+            max-width: (100%/$columns *7);
+            width:100%;
+            float:right;  
         }
         a{
             font-size: 3vw!important;
@@ -206,19 +169,7 @@
             font-size: 1.3vw;
         }
     } 
-    h1{
-        font-size: 3vw;
-        text-transform: uppercase;
-        @include tablet{
-            font-size: 2vw;
-        }
-        @include desktop{
-            font-size: 1.8vw;
-        }
-        @include xxl{
-            font-size: 1.6vw;
-        }
-    }
+
     h3{
         font-size: 2.7vw;
         @include tablet{
@@ -233,10 +184,7 @@
     }
 
     h2{
-        padding:0;
-
-        width:(100%/$columns * 2);
-        text-align: center;
+        padding:0;       
         text-transform:uppercase;
         color:$nav-background;
         background: $bg-footer-color;
@@ -257,9 +205,10 @@
 
 
     h4{
-
-        font-weight: normal;
+        color:rgba(0, 0, 0, 0.6);
+        font-weight:bold;
         text-transform: none;
+        letter-spacing: 1px;
         font-size: 1.8vw;
         line-height: 250%;
         @include tablet{

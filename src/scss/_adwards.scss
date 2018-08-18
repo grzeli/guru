@@ -5,10 +5,11 @@
     max-width: $grid-max-width;
     width:100%;
     margin: 0 auto;
+    display:inline-block;
     @include desktop{
         width:(100%/$columns * 3);
         position:relative;
-        float:left; //zmiena floata w celu obczj
+        float:right; //zmiena floata w celu obczj
         padding:1em;
         padding-top:5.5em;
 
