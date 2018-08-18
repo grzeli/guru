@@ -62,7 +62,9 @@
         }
     }
     div:nth-of-type(2){
-        padding:0 1em;
+        @include tablet{
+            padding:0 1em;
+        }
     }
     div:last-of-type{
         @include tablet{
@@ -141,9 +143,9 @@
 
 
     h3{
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical; 
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
         font-size: 2.7vw;
         @include tablet{
             font-size: 1.65vw;
