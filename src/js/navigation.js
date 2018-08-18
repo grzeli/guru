@@ -5,7 +5,7 @@
             $('#nav-dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
-        $('html').click(function(e) {
+        $('html').click(function() {
             $('#nav-dropdown').hide();
         });
     });
