@@ -202,9 +202,14 @@
             ul{ 
                 display:none;
                 li{ 
-                    padding:.3em 1em;
+                    border-bottom: solid;
+                    border-width: 1px;
+                    width:95%;
+                    border-color: #d8d8d8;
+                    margin:0 auto;
+                    line-height: 3em;
+                    padding:.45em 1em;
                     display:block;
-                    width:100%;
                 }
             }
             @include tablet{
@@ -214,10 +219,11 @@
 
                     display:block;
                     li{
-
+                        border-bottom: none;
                         padding:.3em 1em;
                         display:block;
                         width:100%;
+                        line-height: normal;
 
                     }
                 }
