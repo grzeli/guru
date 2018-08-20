@@ -1,0 +1,10 @@
+.post-content{
+    width:(100%/$columns * 8);
+    display:inline-block;
+     margin:0 auto;
+    padding:1em;
+    vertical-align: top;
+    img{
+        width:100%;
+    }
+}
