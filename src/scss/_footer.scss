@@ -63,7 +63,7 @@
     }
     div:nth-of-type(2){
         @include tablet{
-        padding:0 1em;
+            padding:0 1em;
         }
     }
     div:last-of-type{
@@ -202,14 +202,26 @@
             color:$nav-background;
         }
         li{ 
+            h5{
+                border-bottom: none;
+
+                @include tablet{
+                    border-bottom: 3px solid $yellow; 
+                }
+            }
+            border-bottom: solid;
+            border-width: 1px;
+            width:95%;
+            border-color: #d8d8d8;
+            @include tablet{
+                border-bottom: none;
+            }
+
             padding:1em 0;
             ul{ 
                 display:none;
                 li{ 
-                    border-bottom: solid;
-                    border-width: 1px;
-                    width:95%;
-                    border-color: #d8d8d8;
+                    border-bottom: none;
                     margin:0 auto;
                     line-height: 3em;
                     padding:.45em 1em;
