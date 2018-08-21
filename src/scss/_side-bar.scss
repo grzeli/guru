@@ -31,6 +31,8 @@
             grid-row-start: 1;
             grid-column-start: 2;
             margin:auto auto;
+            text-align: center;
+           
         }
         p{
             margin:0 1em;
@@ -77,10 +79,64 @@
         }         
     }
 
+    ul{  
+        width:100%;
+        margin:0 auto;      
+        text-align: left;
+        list-style: none;
+        text-decoration: none;
+        display:block;
+        a{
+            text-decoration: none;
+            font-weight: normal;
+            color:$nav-background;
+        }
+        li{             
+            border-bottom: solid;
+            border-width: 1px;
+            width:95%;
+            border-color: #d8d8d8;
+            padding:1em 0;
+            ul{ 
+                display:none;
+                li{ 
+                    border-bottom: none;
+                    margin:0 auto;
+                    line-height: 3em;
+                    padding:.45em 1em;
+                    display:block;
+                }
+            }
+            @include tablet{               
+                ul{                    
+                    li{
+                        border-bottom: none;
+                        padding:.3em 1em;
+                        display:block;
+                        width:100%;
+                        line-height: normal;
+
+                    }
+                }
+            }
+        }
 
 
+    }
 
 
+    h2{
+        font-size: 2.5vw;
+        @include tablet{
+            font-size:1.8vw;
+        }
+        @include desktop{
+            font-size: 1.6vw;
+        }
+        @include xxl{
+            font-size: 1.5vw;
+        }
+    }
 
     h4{
 
@@ -116,7 +172,23 @@
         }
     }
 
-
+    a{
+        font-size: 2vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 1.4vw;
+        }
+        @include desktop{
+            font-size: 1.2vw;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical; 
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    }
     p{
         font-size: 2vw;
         text-transform: uppercase;
