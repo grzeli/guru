@@ -76,7 +76,18 @@
                 margin-left: 0;
                 @include border-radius(0);
             }
-        }         
+        } 
+         .adwards-image{
+        position:static;
+        margin:0 auto;
+        padding:0;      
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    }
     }
 
     ul{  
@@ -95,6 +106,7 @@
             border-bottom: solid;
             border-width: 1px;
             width:95%;
+            margin:0 auto;
             border-color: #d8d8d8;
             padding:1em 0;
             ul{ 
