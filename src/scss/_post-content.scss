@@ -1,10 +1,148 @@
 .post-content{
+    @include clearfix;
     width:(100%/$columns * 8);
     display:inline-block;
-     margin:0 auto;
+    margin:0 auto;
     padding:1em;
+    padding-right: 5em;
+    padding-top: 5em;
     vertical-align: top;
+    font-weight: normal;
     img{
         width:100%;
+        padding-top:1em;
     }
+    .btn{
+        @include button($yellow, $yellow, white);
+        @include border-radius(0px);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        display:inline-block;
+        margin-bottom: 2em;
+        a{
+            
+            font-size: 3vw!important;
+            @include tablet{
+                font-size: 1.4vw!important;
+            }
+            @include desktop{
+                font-size: 1.25vw!important;
+            }
+            @include xxl{
+                font-size: 1.23vw!important;
+            }
+        }
+    }
+    div:nth-of-type(1){
+        p{
+            padding:2em 0;
+        }
+        img{
+            @include grid-images(1, 5%);
+        }
+    }
+    ul{
+        list-style: none;
+        text-decoration: none;
+        h2{
+            padding: 2em 0;
+            font-size: 2.5vw;
+            @include tablet{
+                font-size:1.8vw;
+            }
+            @include desktop{
+                font-size: 1.6vw;
+            }
+        }
+        h4{
+            font-family: Baskerville;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            letter-spacing: 0.8px;
+            font-size: 2.5vw;
+            @include tablet{
+                font-size:1.8vw;
+            }
+            @include desktop{
+                font-size: 1.6vw;
+            }
+        }
+        li:nth-of-type(1){
+            img, h4, p, a{
+                display:none;
+            }
+        }
+        li{
+            border-bottom: solid;
+            border-width: 1px;
+            width:100%;
+            border-color: #d8d8d8 ;         
+        }
+    }
+
+
+
+    h2{
+        font-size: 4vw;
+        @include tablet{
+            font-size:3.5vw;
+        }
+        @include desktop{
+            font-size: 3vw;
+        }
+    }
+    h3{
+        color:rgba(0, 0, 0, 0.6);
+        font-weight:bold;
+        text-transform: none;
+        letter-spacing: 1px;
+        font-size: 1.8vw;
+        line-height: 250%;
+        @include tablet{
+            padding:.5em 0;
+            font-size: 1.3vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+    }
+    h4{
+        color:#2b2b2b;
+        font-weight:50;
+        text-transform: none;
+        letter-spacing: 1px;
+        font-size: 1.8vw;
+        line-height: 250%;
+        @include tablet{
+            padding:.5em 0;
+            font-size: 1.3vw;
+        }
+        @include desktop{
+            font-size: 1.1vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+    }
+
+    p{
+        color:#2b2b2b;
+        letter-spacing: .5px;    
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        font-size: 2.5vw;
+        @include tablet{
+            font-size: 1.5vw;
+        }
+        @include desktop{
+            font-size: 1.3vw;
+        }
+        @include xxl{
+            font-size: 1.3vw;
+        }
+    } 
 }
