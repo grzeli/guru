@@ -1,12 +1,15 @@
 .side-post{
-    width:(100%/$columns * 4);
+    width:100%;
+    @include tablet{
+        width:(100%/$columns * 4);
+    }
     max-width: 100%;
     display:inline-block;
     margin:0 auto;
     padding:1em;  
     padding-left: 4em;
     padding-top:5em;
-    div:nth-of-type(1){
+    div:first-of-type{
         display: inline-grid;
         text-align: left;
         width:100%; 
@@ -35,55 +38,102 @@
             grid-row-start: 2;
             grid-column-start: 1;
             grid-column-end: 3;
+            text-transform: none;
+            -webkit-line-clamp: 4;
         }
         border: solid;
         border-width: 2px;
         border-color: $yellow;
     }
 
-    ul{
-        width:100%;
-        li:nth-of-type(n){ 
+    .adwards-side{
+        @include clearfix;
+        @include border-box;
+        max-width: $grid-max-width;
+        width:100%;       
+        margin: 0 auto;
+        display:inline-block;
+        @include desktop{            
+            position:relative;
+            float:right;      
+        }
+
+
+        .adwards-container{
+            display:inline-block;
+            width:100%;   
+            border:none!important;
             padding:1em 0;
-            display:inline-grid;
-            grid-column: 1 2 3;
-            list-style: none;
-            margin:0 auto;
-            text-align: left;
             img{
                 display:block;
                 @include grid-images(1, 5%);
-                width:100%;
+                width:33%;
                 float:left;
-                grid-column-start: 1;
-                margin:0 auto;
-                padding-right: 1em;
+                padding-right:1em;
+                margin-top: 0;
+                margin-left: 0;
+                @include border-radius(0);
             }
-            h2, h4{
-                grid-column-start: 2;
-
-            }
-
-        }
-    }
-    .side-menu{
-        display:inline-block;
-        text-align: left;
-        padding:1em;
-        ul{
-            list-style: none;
-            text-decoration: none;
-            li{
-                display:inline-block!important;
-                ul{
-                    li{
-                        display:inline-block!important;
-                    }
-                }
-            }
-        }
+        }         
     }
 
+
+
+
+
+
+    h4{
+
+        color:rgba(0, 0, 0, 0.6);
+        font-weight:bold;
+        text-transform: none;
+        letter-spacing: 1px;
+        font-size: 1.6vw;
+        line-height: 250%;
+        @include tablet{
+            font-size: 1.2vw;
+        }
+        @include desktop{
+            font-size: 1.0vw;
+        }
+        @include xxl{
+            font-size: 0.65vw;
+        }
+
+    }
+    h5{
+        font-size: 2vw;
+        font-weight: normal;
+        margin:2em auto;
+        @include tablet{
+            font-size: 1.45vw;
+        }
+        @include desktop{
+            font-size: 1.25vw;
+        }
+        @include xxl{
+            font-size: 0.85vw;
+        }
+    }
+
+
+    p{
+        font-size: 2vw;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 1.4vw;
+        }
+        @include desktop{
+            font-size: 1.2vw;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+        }
+        @include xxl{
+            font-size: 1vw;
+        }
+    }
 }
 
 
