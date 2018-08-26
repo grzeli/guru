@@ -16,7 +16,7 @@
     }
     .btn{
         @include button($yellow, $yellow, white);
-        @include border-radius(0px);
+        @include border-radius(3px);
         text-transform: uppercase;
         letter-spacing: 3px;
         display:inline-block;

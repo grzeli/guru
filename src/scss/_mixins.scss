@@ -44,8 +44,8 @@
 }
 
 @mixin button($bg-color, $hover-color, $color) {
-    @include border-radius(5px)
-        display: block;
+    @include border-radius(5px);
+    display: block;
     background-color: $bg-color;
     color: $color;
     border-color: $yellow;
@@ -56,7 +56,7 @@
     padding: 10px 30px;
     @include tablet{
         display: inline-block;
-        
+
     }
     &:hover{
         background-color: $hover-color;
@@ -74,4 +74,3 @@
         margin-bottom: 0;
     }
 }
-    
