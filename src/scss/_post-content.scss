@@ -3,10 +3,10 @@
     width:100%;
     @include tablet{
         width:(100%/$columns * 8);
+        padding-right: 5em;
     }
     display:inline-block;
-    margin:0 auto;
-    padding-right: 5em;
+    margin:0 auto;    
     padding-top: 5em;
     vertical-align: top;
     font-weight: normal;

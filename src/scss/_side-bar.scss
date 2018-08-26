@@ -2,11 +2,12 @@
     width:100%;
     @include tablet{
         width:(100%/$columns * 4);
+        padding-left: 4em;
     }
     max-width: 100%;
     display:inline-block;
     margin:0 auto;
-    padding-left: 4em;
+    
     padding-top:5em;
     div:first-child{
         display: inline-grid;
