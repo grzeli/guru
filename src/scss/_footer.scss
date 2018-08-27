@@ -231,7 +231,7 @@
                 width:(100%/$columns * 4);
                 ul{
 
-                    display:block;
+                    display:block!important;
                     li{
                         border-bottom: none;
                         padding:.3em 1em;

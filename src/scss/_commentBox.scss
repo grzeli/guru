@@ -76,11 +76,21 @@
     background-color: rgba(216, 216, 216, 0.2);
     border: solid 1px #d8d8d8;   
     text-align: left;
-    margin-top:2em;
+    margin-top:10em;
+    @include phone{
+        margin-top:7em;
+    }
+    @include tablet{
+        margin-top:5em;
+    }
+    @include desktop{
+        margin-top:2em;
+    }
     .btn{
         @include button($yellow, $yellow, white);
         @include border-radius(3px);
         border:none;
+        padding:10px 10px;
         font-size: 2vw!important;
         @include tablet{
             font-size: 1.4vw!important;
@@ -123,13 +133,15 @@
     display:block;
     @include phone{
         display:inline-block;
+         width:46.25%!important;
     }
-    width:46.25%;
+   
     padding:1em;
 }
 .form input[type="text"]{
     float:left;
     margin-left: 2.5%;
+    width:95%;
 }
 .form input[type="email"]{
     display:none;
@@ -142,6 +154,7 @@
 .form textarea{
     width:95%;
     margin:1em auto; 
+    padding:1em;
     display:block;
     overflow: auto;
     outline: none;

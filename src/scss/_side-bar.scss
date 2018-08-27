@@ -7,7 +7,7 @@
     max-width: 100%;
     display:inline-block;
     margin:0 auto;
-    
+
     padding-top:5em;
     div:first-child{
         display: inline-grid;
@@ -91,7 +91,7 @@
     }
 
     ul{  
-       
+
         width:100%;
         margin:0 auto;      
         text-align: left;
@@ -108,7 +108,7 @@
         li{   
             border-bottom: solid;
             border-width: 1px;
-            width:95%;
+            width:100%;
             margin:0 auto;
             border-color: #d8d8d8;
             padding:1em 0;
@@ -128,7 +128,6 @@
                         border-bottom: none;
                         padding:.3em 1em;
                         display:block;
-                        width:100%;
                         line-height: normal;
 
                     }
