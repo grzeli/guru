@@ -3,10 +3,13 @@
     @include border-box;
     width:95%; 
     max-width:$grid-max-width;
+    @include xxl{
+        max-width:$grid-max-width2;
+    }
     margin:2em auto;
     padding-top:2em;
     display: block;
-   
+
     @include desktop{
         width:100%;
     }
@@ -77,26 +80,32 @@
     //rozmiary czcionek
 
     h2{
-        padding:0;      
+        padding:0 .3em;      
         width:15%;
         text-align: center;
         text-transform:uppercase;
         color:$nav-background;
         background: #ffffff;
+        font-weight: normal;    
+        font-size: 1.9vw;  
         font-weight: normal;
-        letter-spacing: .2vw;
-        line-height: 2.2em;
-        font-size: 1.9vw;        
+        letter-spacing: 3.6px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        @include phone{
+            font-size: 1.5vw;
+        }
         @include tablet{           
-            font-size: 1.4vw;  
+            font-size: 1.15vw;    
             width:35%;
         }
         @include desktop{
-            font-size: 1.15vw; 
+            font-size: 1.0037vw;  
             width:30%;
         }
         @include xxl{
-            font-size: 0.9vw; 
+            font-size: 11px;  
             width:32%;
 
         }
@@ -104,51 +113,76 @@
 
 
     h4{
-
         color:rgba(0, 0, 0, 0.6);
         font-weight:bold;
         text-transform: none;
-        letter-spacing: 1px;;
-        font-size: 1.8vw;
-        padding:2em 0;
-
+        letter-spacing: 0.8px;        
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        padding:1em 0;
+        font-size: 2.5vw;
+        @include phone{
+            font-size: 1.725vw;
+        }
         @include tablet{
-            padding:.8em 0;
             font-size: 1.3vw;
+            letter-spacing: 0.9px; 
         }
         @include desktop{
-            font-size: 1.1vw;
+            font-size: 1.095vw;
+            letter-spacing: 1px; 
         }
         @include xxl{
-            font-size: 0.85vw;
+            font-size: 12px;
         }
 
     }
 
     p{
-        font-size: 2.3vw;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        line-height: 1.42;
+        font-size: 3vw;
+        @include phone{
+            line-height: 1.45;
+            font-size: 2.2vw;
+        }
         @include tablet{
-            font-size: 1.35vw;
+            font-size: 1.675vw;
+            line-height: 1.475;
         }
         @include desktop{
-            font-size: 1.1vw;
+            font-size: 1.465vw;
+            line-height: 1.5;
         }
         @include xxl{
-            font-size: 1vw;
+            font-size: 16px;
         }
     } 
 
 
-    h3{ 
-        font-size: 2.7vw;
+
+    h3{
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 3.5vw;
+        @include phone{
+            font-size: 2.75vw;
+        }
         @include tablet{
-            font-size: 1.65vw;
+            font-size: 2.4vw;
         }
         @include desktop{
-            font-size: 1.35vw;
+            font-size: 2.2vw;
         }
         @include xxl{
-            font-size: 1.33vw;
+            font-size: 24px;
         }
     }
     a{
@@ -172,15 +206,23 @@
     }
     h5{
         font-weight: normal;
-        font-size: 2.3vw;
+        font-style: normal;
+        font-stretch: normal;            
+        letter-spacing: 4px;
+        color: #2b2b2b;
+        margin:2em auto;
+        font-size: 2.8vw;
+        @include phone{
+            font-size: 1.765vw;
+        }
         @include tablet{
-            font-size: 1vw;
+            font-size: 1.25vw;
         }
         @include desktop{
-            font-size: 1.1vw;
+            font-size: 1.01vw;
         }
         @include xxl{
-            font-size: .9vw;
+            font-size: 11px;;
         }
     }
 
@@ -188,6 +230,9 @@
         width:100%;
         margin:0 auto;
         max-width:$grid-max-width;
+        @include xxl{
+            max-width:$grid-max-width2;
+        }
         text-align: left;
         list-style: none;
         text-decoration: none;
@@ -195,13 +240,30 @@
 
         a{
             text-decoration: none;
+            font-family: $heading-font-family;            
             font-weight: normal;
-            color:$nav-background;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1.2px;
+            color: #403f55;
+            font-size: 2.8vw;
+            @include phone{
+                font-size: 1.765vw;
+            }
+            @include tablet{
+                font-size: 1.5vw;
+            }
+            @include desktop{
+                font-size: 1.3vw;
+            }
+            @include xxl{
+                font-size: 14px;;
+            }
         }
         li{ 
             h5{
                 border-bottom: none;
-
                 @include tablet{
                     border-bottom: 3px solid $yellow; 
                 }
@@ -222,7 +284,7 @@
                     border-bottom: none;
                     margin:0 auto;
                     line-height: 3em;
-                    padding:.45em 1em;
+                    padding:1em 1em;
                     display:block;
                 }
             }
@@ -234,7 +296,7 @@
                     display:block!important;
                     li{
                         border-bottom: none;
-                        padding:.3em 1em;
+                        padding:1em 1em;
                         display:block;
                         width:100%;
                         line-height: normal;
