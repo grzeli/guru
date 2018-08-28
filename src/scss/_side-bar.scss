@@ -18,9 +18,7 @@
         grid-row: 1 / 2;
         grid-row-gap: 1em;
         margin:1em 0;
-        @include tablet{
-            grid-template-columns: 1fr 2fr;
-        }
+
         img{
             display:block;  
             margin-top: 3em;
@@ -45,14 +43,36 @@
             margin:auto 0;
             padding-left: 3em;
             text-align:left;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.18;
+            letter-spacing: normal;
+            color: #000000;
+            font-size: 7vw;
+            font-weight: normal;
+            @include phone{
+                font-size: 4.5vw;
+            }
             @include tablet{
-                padding-left:1em;
+                padding:0 .5em;
                 text-align: center;
                 margin:auto auto;
+                font-size:3.2vw;
             }
+            @include desktop{
+                font-size: 2.55vw;
+            }
+            @include xxl{
+                font-size: 28px;
+            }        
 
         }
         p{
+            font-family: $paragraph-font-family;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
             margin:0 1em;
             margin-bottom: 1em;
             grid-row-start: 2;
@@ -60,6 +80,28 @@
             grid-column-end: 3;
             text-transform: none;
             -webkit-line-clamp: 4;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.19;
+            letter-spacing: 0.5px;
+            color: #2b2b2b;
+            font-size: 4vw;
+            @include phone{
+                font-size: 2.55vw;
+            }
+            @include tablet{
+                padding:0 .5em;
+                text-align: left;
+                margin:auto auto;
+                font-size:1.8vw;
+            }
+            @include desktop{
+                font-size: 1.465vw;
+            }
+            @include xxl{
+                font-size: 16px;
+            } 
         }
         border: solid;
         border-width: 2px;
@@ -179,37 +221,39 @@
     }
 
     h4{
-
-        color:rgba(0, 0, 0, 0.6);
-        font-weight:bold;
-        text-transform: none;
-        letter-spacing: 1px;
-        font-size: 1.6vw;
-        line-height: 250%;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: .8px;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 2.5vw;
+        @include phone{
+            font-size: 1.8vw;
+             letter-spacing: .87px;
+        }
         @include tablet{
-            font-size: 1.2vw;
+            font-size: 1.3vw;
+             letter-spacing: .93px;
         }
         @include desktop{
-            font-size: 1.0vw;
+            font-size: 1.1vw;
+             letter-spacing: 1px;
         }
         @include xxl{
-            font-size: 0.65vw;
+            font-size: 12px;
         }
 
     }
     h5{
-        font-size: 2vw;
-        font-weight: normal;
         margin:2em auto;
-        @include tablet{
-            font-size: 1.45vw;
-        }
-        @include desktop{
-            font-size: 1.25vw;
-        }
-        @include xxl{
-            font-size: 0.85vw;
-        }
+        font-size: 11px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+
+        letter-spacing: 5px;
+        color: #2b2b2b;
     }
 
     a{
@@ -230,23 +274,33 @@
         }
     }
     p{
-        font-size: 2vw;
-        text-transform: uppercase;
-        @include tablet{
-            font-size: 1.4vw;
+        font-family: $heading-font-family;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+        font-size: 3.5vw;
+        @include phone{
+            font-size: 2.35vw;
         }
-        @include desktop{
-            font-size: 1.2vw;
+        @include tablet{
+            font-size: 1.75vw;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical; 
         }
+        @include desktop{
+            font-size: 1.47vw;
+        }
         @include xxl{
-            font-size: 1vw;
+            font-size: 16px;
         }
     }
 }
+
 
 
 
