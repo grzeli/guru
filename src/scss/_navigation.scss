@@ -1,10 +1,16 @@
+.nav-container{
+    padding-left:5%!important;
+    padding-right: 5%!important;
+    @include tablet{
+        padding-left:2.5%!important;
+        padding-right: 2.5%!important;
+    }
+}
+
 nav {
     float: left;
     margin:0 auto;
-    max-height: $nav-height;
-    hr{
-        display:none;
-    }
+    max-height: $nav-height;    
     a{
         font-weight: normal;
         font-family:  'Roboto Slab', serif;

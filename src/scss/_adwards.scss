@@ -9,9 +9,9 @@
     @include desktop{
         width:(100%/$columns * 3);
         position:relative;
-        float:right; //zmiena floata w celu obczj
-        padding:1em;
+        float:right; 
         padding-top:5.5em;
+        padding-left:2em;
 
     }
 
@@ -81,6 +81,14 @@
             width:33%;
             float:left;
             padding-right:1em;
+        }
+        p, h4{
+            width:67%;
+            float:right;
+        }
+        h4{
+            margin-top:.5em;
+            line-height: normal;
         }
     }
     .adwards-image{

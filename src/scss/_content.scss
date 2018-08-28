@@ -2,10 +2,10 @@
     @include clearfix;
     margin:0 auto;
     width:100%;
-    padding:1em 1em 1em 0;
+    padding:0em;
     position:static;  
     @include tablet{
-        padding:7em 1em 1em 0;
+        padding:7em 0 1em 0;
         display:inline-block;
         vertical-align: top;
     }
@@ -20,6 +20,9 @@
     }
     div:nth-of-type(n){
         padding-bottom: 5em;
+        h2{
+            padding:0 .45em;
+        }
         @include tablet{
             padding-bottom:0em;
         }
@@ -94,10 +97,9 @@
             width:100%;
             height:100%;
         }
-        img, a{
-            order:1;
+        h2{
+            margin-bottom: 1em;
         }
-
         @include tablet{
             max-width: (100%/$columns * 5);
             width:100%;
