@@ -34,7 +34,7 @@
         @include tablet{
             display:inline-block;
             vertical-align:top;
-            width:(100%/$columns * 4);
+            max-width:(100%/$columns * 4);
             padding-bottom: 2em!important;
             padding-top: 2em!important;
             h4, h3 {
@@ -77,8 +77,10 @@
     //rozmiary czcionek
 
     h2{
-        padding:0 .3em;      
-        width:15%;
+        font-family: $paragraph-font-family;
+        width: max-content;
+        display:block;
+        padding:.7em;      
         text-align: center;
         text-transform:uppercase;
         color:$nav-background;
@@ -95,15 +97,15 @@
         }
         @include tablet{           
             font-size: 1.15vw;    
-            width:38%;
+            
         }
         @include desktop{
             font-size: 1.0037vw;  
-            width:30%;
+           
         }
         @include xxl{
             font-size: 11px;  
-            width:25%;
+            
 
         }
     }
@@ -252,8 +254,6 @@
         text-transform: uppercase;
         background-color: $bg-footer-color;
         padding:0 1em;
-
-
     }
     h5{
         font-weight: normal;
@@ -308,9 +308,6 @@
         width:100%;
         margin:0 auto;
         max-width:$grid-max-width;
-        @include xxl{
-            max-width:$grid-max-width2;
-        }
         text-align: left;
         list-style: none;
         text-decoration: none;
@@ -343,7 +340,10 @@
             h5{
                 border-bottom: none;
                 @include tablet{
-                    border-bottom: 3px solid $yellow; 
+                    border-bottom: 1.5px solid $yellow; 
+                    width:96%;
+                    text-align: left;
+                    float:left;
                 }
             }
             border-bottom: solid;
@@ -359,6 +359,7 @@
             ul{ 
                 display:block;
                 li{ 
+                    display:block;
                     border-bottom: none;
                     margin:0 auto;
                     line-height: 3em;

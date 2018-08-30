@@ -21,13 +21,13 @@
     div:nth-of-type(n){
         padding-bottom: 5em;
         h2{
-            padding:0 .45em;
+            padding:.7em;
         }
         @include tablet{
             padding-bottom:0em;
         }
         .btn{
-             hover{
+            a{
                 text-decoration: underline;
             }
         }
@@ -37,10 +37,10 @@
         h2, h4, p, a{
             display:none!important;
         }
-
         max-width:100%!important;
         width:100%!important;
         h3{
+            -webkit-line-clamp: 7!important;
             margin:0 0.7em;
             line-height: 150%;
             font-size:20px;
@@ -196,24 +196,28 @@
         .btn{
             @include button($bg-color, $bg-color, black); 
             padding:0;
-           
         }
+
         height:100%;
         border: solid;
         border-color: $yellow;
         border-width: 2px;
         width:100%;
         text-align: center!important;
-        padding:.5em!important;      
+        padding:1em!important;      
         margin:2em auto;
         align-items:center;
         @include tablet{
-            max-width: (100%/$columns *7);
+            max-width: (100%/$columns *7.25);
             width:100%;
             float:right;  
         }
         a{
-            font-weight: normal;
+            overflow: hidden!important;
+            display: -webkit-box!important;
+            -webkit-box-orient: vertical!important;
+            -webkit-line-clamp: 1!important;
+            font-weight: normal!important;
             font-style: normal;
             font-stretch: normal;
             line-height: 2.29;

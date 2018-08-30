@@ -19,7 +19,8 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         display:inline-block;
-        margin-bottom: 2em;            
+        margin-bottom: 2em;  
+        font-weight: 900!important;
         font-size: 3vw!important;
         @include tablet{
             font-size: 1.4vw!important;

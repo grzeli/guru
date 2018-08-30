@@ -29,19 +29,19 @@ img {
 h5 {
     width: 100%; 
     text-align:left; 
-    border-bottom: 3px solid $yellow; 
+    border-bottom: 1.5px solid $yellow; 
     line-height: 0.1em;
     margin: 10px 0 20px;   
     font-family: $paragraph-font-family;
     text-transform: uppercase;
     letter-spacing: .2em;
-  
+
 
 } 
 
 h5 span { 
     background:#fff; 
     padding:0;
-
+    padding-right: 1em;
 }
 

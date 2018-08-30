@@ -16,7 +16,7 @@
     }
 
     h4{
-
+        text-transform: uppercase;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -171,22 +171,21 @@
 
 
     }
-    // div:nth-of-type(n){
-    // }
+
     .adwards-container{
         display:inline-block;
         padding-bottom: 2em;
         width:100%;        
         img{
-            display:block;
-            @include grid-images(1, 5%);
-            width:33%;
+            display:block;          
             float:left;
-            padding-right:1em;
+            width: 33%;
+            height:auto;
         }
         p, h4{
             width:67%;
             float:right;
+            padding-left:15px;
         }
         h4{
             margin-top:.5em;
@@ -206,6 +205,10 @@
                 width:100%;
             }
         }
+    }
+    h5:last-of-type{
+        margin:2em;
+
     }
 }
 
