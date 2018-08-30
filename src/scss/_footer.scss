@@ -3,9 +3,6 @@
     @include border-box;
     width:95%; 
     max-width:$grid-max-width;
-    @include xxl{
-        max-width:$grid-max-width2;
-    }
     margin:2em auto;
     padding-top:2em;
     display: block;
