@@ -20,7 +20,7 @@
         margin:1em 0;
         padding-bottom: 2em;
         @include tablet{
-        padding-bottom: 1.5em;
+            padding-bottom: 1.5em;
         }
         border: solid;
         border-width: 2px;
@@ -182,6 +182,7 @@
 
         .adwards-container{
             display:inline-block;
+            position: relative;
             width:100%;   
             border:none!important;
             padding:1em 0;
@@ -199,8 +200,16 @@
                 width:67%;
                 float:right;
             }
-            h4{
+            h4{                
                 line-height: normal;
+                display:flex;
+                flex-direction:row;
+                align-items:flex-start;
+                
+
+
+
+
             }
         } 
         .adwards-image{

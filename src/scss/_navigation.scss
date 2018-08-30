@@ -10,14 +10,15 @@
 nav {
     float: left;
     margin:0 auto;
-    max-height: $nav-height;    
+    max-height: $nav-height;  
+
     a{
         font-weight: normal;
         font-family:  'Roboto Slab', serif;
         overflow: hidden;
         display: -webkit-box;
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical; 
         font-size:12px;
         @include phone1{
             font-size: 3.3vw;
@@ -95,7 +96,7 @@ nav {
             ul li {
                 min-width: 190px;
                 & a {
-                    padding: 15px;
+                    margin: 15px 0;
                     line-height: 20px;
                     z-index: 1;
                 }
@@ -120,51 +121,18 @@ nav {
 
 
 .nav-brand {   
-    margin:0 auto;
+    margin:0;
+    padding:0;
     float:left;
     display:block;
-    background-color: $yellow;  
-    padding: 0 20px 0 20px;   
-    line-height: (($nav-height)/2);
-    text-align: center!important;
-    font-size: 1.4em;
-    a{        
-        font-size: 4vw;
-        @include tablet{
-            font-size: 3vw;
-        }
-        @include desktop{
-            font-size: 2.5vw;
-        }
-        @include xxl{
-            font-size: 1.7vw;
-        }
-
-    }
-    a,
-    a:visited {        
-        color: $nav-font-color;
-        text-decoration: none;
-        padding:0;       
-    }
-    span{
+    position:static;
+    padding: 0;  
+    height:72px;
+    img{
+        border-radius: 0;
         width:100%;
-        display:inline-block;
-        float:left;
-        clear:left;       
-        margin:0 auto;
-
     }
-    span:nth-of-type(2){
-        font-family: 'Luckiest Guy', cursive;
-    }
-    span:nth-of-type(1){
-        font-family: 'Dancing Script', cursive;
-        font-weight: 700;
-        color: $nav-background;
-
-    }
-
+   
 }
 
 #nav-dropdown {
@@ -257,7 +225,7 @@ nav {
 
 #nav-toggle {
     position: absolute;
-    left: 18px;
+   right: 18px;
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
@@ -317,8 +285,11 @@ nav {
             right:0;
             overflow-x: hidden;
             background-color:#ffffff;
-            width:95%;
-            box-shadow: -50px 0 0 0 rgba(0, 0, 0, 0.5); //3 wartosc to rozmycie 
+            width:70%;
+            box-shadow: -200px 0 0 0 rgba(0, 0, 0, 0.5); //3 wartosc to rozmycie 
+            @include phone6{
+                box-shadow: -230px 0 0 0 rgba(0, 0, 0, 0.5);
+            }
             ul:nth-of-type(n){
                 overflow-y: none;
                 height:100%;

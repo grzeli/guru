@@ -10,7 +10,7 @@
         width:(100%/$columns * 3);
         position:relative;
         float:right; 
-        padding-top:5.5em;
+        padding-top:7em;
         padding-left:2em;
 
     }
@@ -71,7 +71,8 @@
         font-stretch: normal;            
         letter-spacing: 4px;
         color: #2b2b2b;
-        margin:2em auto;
+        margin:0 auto;
+        margin-bottom: 2em;
         font-size:11px;
         @include phone1{
             font-size: 3vw;

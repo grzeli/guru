@@ -13,7 +13,9 @@ body {
     color:  $paragraph-text-color;
     font-family: $paragraph-font-family;
     text-style: none;
-
+    min-width: 303px!important;
+    width:auto;
+    overflow-y:scroll;
 }
 
 footer {
