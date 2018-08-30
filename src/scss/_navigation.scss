@@ -113,9 +113,6 @@ nav {
 .nav-container {
     max-width: $content-width;
     margin: 0 auto;
-    @include xxl{
-        max-width:$grid-max-width2;  
-    }
 }
 
 

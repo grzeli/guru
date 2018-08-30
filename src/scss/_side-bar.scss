@@ -182,7 +182,7 @@
 
         .adwards-container{
             display:inline-block;
-            position: relative;
+            position: static;
             width:100%;   
             border:none!important;
             padding:1em 0;
@@ -200,16 +200,10 @@
                 width:67%;
                 float:right;
             }
-            h4{                
+            h4{    
+                display:inline-block!important;
                 line-height: normal;
-                display:flex;
-                flex-direction:row;
-                align-items:flex-start;
-                
-
-
-
-
+                vertical-align: bottom;
             }
         } 
         .adwards-image{
