@@ -10,7 +10,7 @@
         vertical-align: top;
     }
     @include desktop{
-        max-width: (100%/$columns * 9);
+        max-width: (100%/$columns * 8);
 
     }
     img{

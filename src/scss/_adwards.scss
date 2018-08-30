@@ -7,7 +7,7 @@
     margin: 0 auto;
     display:inline-block;
     @include desktop{
-        width:(100%/$columns * 3);
+        width:(100%/$columns * 4);
         position:relative;
         float:right; 
         padding-top:7em;
