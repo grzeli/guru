@@ -12,7 +12,6 @@
     font-weight: normal;
     img{
         width:100%;
-        padding-top:1em;
     }
     .btn{
         @include button($yellow, $yellow, white);
@@ -44,8 +43,13 @@
     ul{
         list-style: none;
         text-decoration: none;
+        float:left;
+        img{
+            margin-top: 2em;
+            width:75%;
+        }
         h2{
-            padding: 2em 0;
+            padding: 1em 0;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;

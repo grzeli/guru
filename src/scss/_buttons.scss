@@ -1,4 +1,4 @@
 .btn{
-    @include button($bg-color, darken($yellow, 20), black);
+    @include button($bg-color, $bg-color, black);
     padding: 10px 0;
 }

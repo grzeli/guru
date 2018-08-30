@@ -26,6 +26,11 @@
         @include tablet{
             padding-bottom:0em;
         }
+        .btn{
+             hover{
+                text-decoration: underline;
+            }
+        }
     }
 
     div:first-of-type{
@@ -191,6 +196,7 @@
         .btn{
             @include button($bg-color, $bg-color, black); 
             padding:0;
+           
         }
         height:100%;
         border: solid;
