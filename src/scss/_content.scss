@@ -37,9 +37,13 @@
         h2, h4, p, a{
             display:none!important;
         }
+        img{
+             order:1!important;
+        }
         max-width:100%!important;
         width:100%!important;
         h3{
+            padding-top:1em;
             -webkit-line-clamp: 7!important;
             margin:0 0.7em;
             line-height: 150%;
@@ -85,6 +89,9 @@
             }
         }
         @include tablet{
+            h3{
+                padding-top:0;
+            }
             display:flex!important;      
             background-color: white!important;
             flex-direction: row!important;

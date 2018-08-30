@@ -16,9 +16,13 @@
         margin:0 auto;
         padding: 4em 0;
         h4, h3 {
+            padding-left: 15px;
             display:inline-block;
             float:right;
             width:67%;
+            @include tablet{
+                padding-left:0px;
+            }
         }
         h2, p{
             display:none;

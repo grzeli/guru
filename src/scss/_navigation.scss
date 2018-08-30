@@ -1,6 +1,5 @@
 .nav-container{
-    padding-left:5%!important;
-    padding-right: 5%!important;
+    
     @include tablet{
         padding-left:2.5%!important;
         padding-right: 2.5%!important;
@@ -105,31 +104,43 @@ nav {
     }
 }
 
-.navigation {
-    height: $nav-height;
+.navigation {   
+    height: $nav-height;     
     background: $nav-background;
 }
 
 .nav-container {
     max-width: $content-width;
     margin: 0 auto;
+    width:100%;
 }
 
 
 
 .nav-brand {   
-    margin:0;
-    padding:0;
+    margin:auto auto;
+    padding:0;   
+    min-width: 70px;
+    max-width: 15%;
     float:left;
     display:block;
-    position:static;
+    position:relative;
     padding: 0;  
-    height:72px;
-    img{
-        border-radius: 0;
-        width:100%;
+    @include tablet{
+        height:72px;
+        margin:0;
     }
-   
+    img{    
+        padding-top:2em;
+        @include tablet{
+            padding-top:0;
+        }
+        margin:auto 0 ;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
 }
 
 #nav-dropdown {
@@ -222,7 +233,7 @@ nav {
 
 #nav-toggle {
     position: absolute;
-   right: 18px;
+    right: 18px;
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
