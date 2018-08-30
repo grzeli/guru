@@ -36,10 +36,37 @@
         width:100%!important;
         h3{
             line-height: 150%;
-            font-size: 4.6vw;
-            @include phone{
-                font-size:3.45vw;
+            font-size:20px;
+            @include phone1{
+                font-size: 5.5vw;
             }
+            @include phone2{
+                font-size: 5.2vw;
+            }
+            @include phone3{
+                font-size: 4.75vw;
+            }
+            @include phone{
+                font-size:4.45vw;
+            }
+            @include phone4{
+                font-size: 4.2vw;
+            }
+            @include phone5{
+                font-size: 4vw;
+            }
+            @include phone6{
+                font-size: 3.75vw;
+            }
+            @include phone7{
+                font-size: 3.45vw;
+            }
+            @include phone8{
+                font-size: 3.3vw;
+            }
+            @include phone9{
+                font-size: 3.15vw;
+            }          
             @include tablet{
                 font-size: 2.85vw;
             }
@@ -47,7 +74,7 @@
                 font-size: 2.55vw;
             }
             @include xxl{
-                font-size: 2.3vw;
+                font-size: 28px;
             }
         }
         @include tablet{
@@ -174,11 +201,37 @@
             line-height: 2.29;
             letter-spacing: normal;
             color:#1e2b34;
-            font-size: 3.5vw!important;
-            @include phone{
-                font-size: 2.785vw!important;
-                line-height: 2;
+            font-size:14px!important;
+            @include phone1{
+                font-size: 3.85vw!important;
             }
+            @include phone2{
+                font-size: 3.5vw!important;
+            }
+            @include phone3{
+                font-size: 3.2vw!important;
+            }
+            @include phone{
+                font-size:2.95vw!important;
+            }
+            @include phone4{
+                font-size: 2.8vw!important;
+            }
+            @include phone5{
+                font-size: 2.7vw!important;
+            }
+            @include phone6{
+                font-size: 2.6vw!important;
+            }
+            @include phone7{
+                font-size: 2.5vw!important;
+            }
+            @include phone8{
+                font-size: 2.4vw!important;
+            }
+            @include phone9{
+                font-size: 2.3vw!important;
+            } 
             @include tablet{
                 font-size: 2.375vw!important;
                 line-height: 1.75;
@@ -201,11 +254,37 @@
         font-stretch: normal;
         letter-spacing: normal;
         line-height: 1.42;
-        font-size: 3vw;
-        @include phone{
-            line-height: 1.45;
-            font-size: 2.2vw;
+        font-size:12px;
+        @include phone1{
+            font-size: 3.32vw;
         }
+        @include phone2{
+            font-size: 3.05vw;
+        }
+        @include phone3{
+            font-size: 2.85vw;
+        }
+        @include phone{
+            font-size:2.6vw;
+        }
+        @include phone4{
+            font-size: 2.45vw;
+        }
+        @include phone5{
+            font-size: 2.25vw;
+        }
+        @include phone6{
+            font-size: 2.1vw;
+        }
+        @include phone7{
+            font-size: 2vw;
+        }
+        @include phone8{
+            font-size: 1.95vw;
+        }
+        @include phone9{
+            font-size: 1.85vw;
+        }          
         @include tablet{
             font-size: 1.675vw;
             line-height: 1.475;
@@ -220,10 +299,37 @@
     } 
 
     h3{
-        font-size: 4.5vw;
-        @include phone{
-            font-size: 3.2085vw;
+        font-size:18px;
+        @include phone1{
+            font-size: 5vw;
         }
+        @include phone2{
+            font-size: 4.7vw;
+        }
+        @include phone3{
+            font-size: 4.4vw;
+        }
+        @include phone{
+            font-size:4.2vw;
+        }
+        @include phone4{
+            font-size: 4.05vw;
+        }
+        @include phone5{
+            font-size: 3.9vw;
+        }
+        @include phone6{
+            font-size: 3.75vw;
+        }
+        @include phone7{
+            font-size: 3.4vw;
+        }
+        @include phone8{
+            font-size: 3.2vw;
+        }
+        @include phone9{
+            font-size: 3.1vw;
+        }          
         @include tablet{
             font-size: 2.5vw;
         }
@@ -248,10 +354,37 @@
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
-        font-size: 2vw; 
-        @include phone{
-            font-size: 1.5vw;
+        font-size:8px;
+        @include phone1{
+            font-size: 2.2vw;
         }
+        @include phone2{
+            font-size: 2.05vw;
+        }
+        @include phone3{
+            font-size: 1.9vw;
+        }
+        @include phone{
+            font-size:1.85vw;
+        }
+        @include phone4{
+            font-size: 1.7vw;
+        }
+        @include phone5{
+            font-size: 1.55vw;
+        }
+        @include phone6{
+            font-size: 1.4vw;
+        }
+        @include phone7{
+            font-size: 1.3vw;
+        }
+        @include phone8{
+            font-size: 1.25vw;
+        }
+        @include phone9{
+            font-size: 1.2vw;
+        }          
         @include tablet{           
             font-size: 1.15vw;           
         }
@@ -273,10 +406,37 @@
         font-stretch: normal;
         line-height: normal;
         padding:1em 0;
-        font-size: 2.5vw;
-        @include phone{
-            font-size: 1.725vw;
+        font-size:10px;
+        @include phone1{
+            font-size: 2.8vw;
         }
+        @include phone2{
+            font-size: 2.5vw;
+        }
+        @include phone3{
+            font-size: 2.3vw;
+        }
+        @include phone{
+            font-size:2.15vw;
+        }
+        @include phone4{
+            font-size: 2.05vw;
+        }
+        @include phone5{
+            font-size: 1.9vw;
+        }
+        @include phone6{
+            font-size: 1.7vw;
+        }
+        @include phone7{
+            font-size: 1.65vw;
+        }
+        @include phone8{
+            font-size: 1.5vw;
+        }
+        @include phone9{
+            font-size: 1.45vw;
+        }          
         @include tablet{
             font-size: 1.3vw;
             letter-spacing: 0.9px; 
@@ -300,17 +460,44 @@
         line-height: normal;
         letter-spacing: 1px;
         color: #403f55;
-        font-size: 3vw!important;
-        @include phone{
-            font-size: 2.05vw!important;
+        font-size:12px!important;
+        @include phone1{
+            font-size: 3.3vw!important;
         }
+        @include phone2{
+            font-size: 3vw!important;
+        }
+        @include phone3{
+            font-size: 2.8vw!important;
+        }
+        @include phone{
+            font-size:2.55vw!important;
+        }
+        @include phone4{
+            font-size: 2.35vw!important;
+        }
+        @include phone5{
+            font-size: 2.2vw!important;
+        }
+        @include phone6{
+            font-size: 2vw!important;
+        }
+        @include phone7{
+            font-size: 1.9vw!important;
+        }
+        @include phone8{
+            font-size: 1.8vw!important;
+        }
+        @include phone9{
+            font-size: 1.7vw!important;
+        } 
         @include tablet{
             font-size: 1.5vw!important;
-             letter-spacing: 1.1px;
+            letter-spacing: 1.1px;
         }
         @include desktop{
             font-size: 1.28vw!important;
-             letter-spacing: 1.2px;
+            letter-spacing: 1.2px;
         }
         @include xxl{
             font-size: 14px!important;

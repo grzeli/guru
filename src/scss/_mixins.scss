@@ -1,3 +1,51 @@
+@mixin phone1 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone1')){
+        @content; 
+    }
+}
+
+@mixin phone2 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone2')){
+        @content; 
+    }
+}
+@mixin phone3 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone3')){
+        @content; 
+    }
+}
+@mixin phone4 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone4')){
+        @content; 
+    }
+}
+@mixin phone5 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone5')){
+        @content; 
+    }
+}
+@mixin phone6 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone6')){
+        @content; 
+    }
+}
+@mixin phone7 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone7')){
+        @content; 
+    }
+}
+@mixin phone8 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone8')){
+        @content; 
+    }
+}
+
+@mixin phone9 {
+    @media only screen and(min-width: map-get($breakpoints, 'phone9')){
+        @content; 
+    }
+}
+
 @mixin phone {
     @media only screen and(min-width: map-get($breakpoints, 'phone')){
         @content; 

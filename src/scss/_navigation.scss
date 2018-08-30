@@ -18,15 +18,45 @@ nav {
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical; 
-        font-size: 3vw;
-        @include tablet{
-            font-size: 2vw;
+        font-size:12px;
+        @include phone1{
+            font-size: 3.3vw;
+        }
+        @include phone2{
+            font-size: 2.95vw;
+        }
+        @include phone3{
+            font-size: 2.7vw;
+        }
+        @include phone{
+            font-size:2.45vw;
+        }
+        @include phone4{
+            font-size: 2.25vw;
+        }
+        @include phone5{
+            font-size: 2.05vw;
+        }
+        @include phone6{
+            font-size: 1.9vw;
+        }
+        @include phone7{
+            font-size: 1.8vw;
+        }
+        @include phone8{
+            font-size: 1.7vw;
+        }
+        @include phone9{
+            font-size: 1.62vw;
+        }          
+        @include tablet{            
+            font-size: 1.35vw;
         }
         @include desktop{
-            font-size: 1.5vw;
+            font-size: 1.1vw;
         }
         @include xxl{
-            font-size: 1.1vw;
+            font-size: 12px;
         }
     }
     ul {
@@ -150,7 +180,52 @@ nav {
     border-width: 1px;
     width:150%;
     background-color: #ffffff;
-
+    a{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical; 
+        font-size:14px;
+        @include phone1{
+            font-size: 3.85vw;
+        }
+        @include phone2{
+            font-size: 3.45vw;
+        }
+        @include phone3{
+            font-size: 3.2vw;
+        }
+        @include phone{
+            font-size:2.92vw;
+        }
+        @include phone4{
+            font-size: 2.7vw;
+        }
+        @include phone5{
+            font-size: 2.5vw;
+        }
+        @include phone6{
+            font-size: 2.3vw;
+        }
+        @include phone7{
+            font-size: 2.2vw;
+        }
+        @include phone8{
+            font-size: 2.05vw;
+        }
+        @include phone9{
+            font-size: 1.95vw;
+        }          
+        @include tablet{
+            font-size: 1.73vw;
+        }
+        @include desktop{
+            font-size: 1.29vw;
+        }
+        @include xxl{
+            font-size: 16px;
+        }
+    }
 
 
     a:last-of-type:before{                         

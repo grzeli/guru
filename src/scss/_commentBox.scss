@@ -106,22 +106,101 @@
         margin:1em;
         margin-left: 2.5%;
         float:left;
-        text-transform: none;   
-        font-size: 1.8vw;
-        @include tablet{
-            padding:.5em 0;
-            font-size: 1.3vw;
+        text-transform: none;  
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 0.4px;
+        font-size:12px;
+        @include phone1{
+            font-size: 3.3vw;
+        }
+        @include phone2{
+            font-size: 2.95vw;
+        }
+        @include phone3{
+            font-size: 2.7vw;
+        }
+        @include phone{
+            font-size:2.45vw;
+        }
+        @include phone4{
+            font-size: 2.25vw;
+        }
+        @include phone5{
+            font-size: 2.05vw;
+        }
+        @include phone6{
+            font-size: 1.9vw;
+        }
+        @include phone7{
+            font-size: 1.8vw;
+        }
+        @include phone8{
+            font-size: 1.7vw;
+        }
+        @include phone9{
+            font-size: 1.62vw;
+        }          
+        @include tablet{            
+            font-size: 1.35vw;
         }
         @include desktop{
             font-size: 1.1vw;
         }
         @include xxl{
-            font-size: 0.85vw;
+            font-size: 12px;
         }
     }
     h2{
         border:none!important;
         margin-left: 2.5%;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #2b2b2b;
+        font-size:18px;
+        @include phone1{
+            font-size: 5vw;
+        }
+        @include phone2{
+            font-size: 4.7vw;
+        }
+        @include phone3{
+            font-size: 4.4vw;
+        }
+        @include phone{
+            font-size:4.2vw;
+        }
+        @include phone4{
+            font-size: 4.05vw;
+        }
+        @include phone5{
+            font-size: 3.9vw;
+        }
+        @include phone6{
+            font-size: 3.75vw;
+        }
+        @include phone7{
+            font-size: 3.4vw;
+        }
+        @include phone8{
+            font-size: 3.2vw;
+        }
+        @include phone9{
+            font-size: 3.1vw;
+        }          
+        @include tablet{
+            font-size: 2.5vw;
+        }
+        @include desktop{
+            font-size: 2.2vw;
+        }
+        @include xxl{
+            font-size: 24px;
+        }
     }
 
 }
@@ -133,9 +212,9 @@
     display:block;
     @include phone{
         display:inline-block;
-         width:46.25%!important;
+        width:46.25%!important;
     }
-   
+
     padding:1em;
 }
 .form input[type="text"]{
