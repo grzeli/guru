@@ -222,8 +222,8 @@
         margin:2em auto;
         align-items:center;
         @include tablet{
-            max-width: (100%/$columns *7.25);
-            width:100%;
+            max-width:100%;
+           width: max-content;
             float:right;  
         }
         a{
