@@ -346,7 +346,8 @@ nav {
                         }
                     }
                     &:not(:only-child):after {
-                        padding-left: 4px;
+                        position: absolute;
+                        right: 5px;
                         content: ' ▾';
                     } 
 
