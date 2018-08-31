@@ -192,7 +192,6 @@
                 @include grid-images(1, 5%);
                 width:33%;
                 float:left;
-                padding-right:1em;
                 margin-top: 0;
                 margin-left: 0;
                 @include border-radius(0);
@@ -200,6 +199,7 @@
             p, h4{
                 width:67%;
                 float:right;
+                padding-left: 1em;
             }
             h4{    
                 vertical-align: bottom;
