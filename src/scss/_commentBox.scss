@@ -89,6 +89,10 @@
     .btn{
         @include button($yellow, $yellow, white);
         @include border-radius(3px);
+         &:hover{
+        background-color: darken($yellow, 20);
+        text-decoration: none;
+    }
         border:none;
         padding:10px 10px;
         font-size: 2vw!important;
