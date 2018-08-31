@@ -318,37 +318,37 @@
         line-height: 1.5;
         letter-spacing: 0.4px;
         color: #2b2b2b;
-        font-size:14px;
+        font-size:16px;
         @include phone1{
-            font-size: 3.9vw;
+            font-size:4.4vw;
         }
         @include phone2{
-            font-size: 3.5vw;
+            font-size: 4vw;
         }
         @include phone3{
-            font-size: 3.2vw;
+            font-size: 3.6vw;
         }
         @include phone{
-            font-size:2.9vw;
+            font-size:3.3vw;
         }
         @include phone4{
-            font-size: 2.7vw;
+            font-size: 3.05vw;
         }
         @include phone5{
-            font-size: 2.5vw;
+            font-size: 2.75vw;
         }
         @include phone6{
-            font-size: 2.38vw;
+            font-size: 2.58vw;
         }
         @include phone7{
-            font-size: 2.2vw;
+            font-size: 2.4vw;
         }
         @include phone8{
-            font-size: 2.1vw;
+            font-size: 2.3vw;
         }
         @include phone9{
-            font-size: 1.95vw;
-        }          
+            font-size: 2.16vw;
+        } 
         @include tablet{
             font-size: 1.75vw;
             line-height: 1.54;
