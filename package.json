@@ -1,7 +1,7 @@
 {
-  "name": "uniwersal-workflow",
+  "name": "universal-workflow",
   "version": "1.0.0",
-  "description": "uniwersal startup",
+  "description": "universal startup",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

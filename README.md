@@ -1,4 +1,4 @@
-# uniwersal-workflow
+# universal-workflow
 universal startup project| NPM, SASS, Gulp Moustache
 
 #Instrukcje
