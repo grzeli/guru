@@ -27,14 +27,12 @@
             padding-bottom:0em;
         }
         .btn{
-            a{
-                text-decoration: underline;
-            }
+            text-decoration: underline;
         }
     }
 
     div:first-of-type{
-        h2, h4, p, a{
+        h2, h4, p, button{
             display:none!important;
         }
         img{
@@ -180,7 +178,7 @@
             margin:0;
             padding-left:1em; 
             padding-bottom: 4em;  
-            img, a{
+            img, button{
                 order:1;
             }
         }
@@ -334,6 +332,10 @@
     } 
 
     h3{
+        a {
+            color: black;
+            text-decoration: none;
+        }
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -436,7 +438,6 @@
         }
     }
 
-
     h4{
         color:rgba(0, 0, 0, 0.6);
         font-weight:bold;
@@ -491,8 +492,9 @@
 
     }
 
-
-    a{
+    button{
+        border: none;
+        cursor: pointer;
         font-family: $heading-font-family;
         font-weight: bold;
         font-style: normal;
