@@ -198,85 +198,87 @@
         }
     }
 
+    & > a {
+        // @include border-box;
 
+        @include button($bg-color, $bg-color, black); 
+        padding:0;
 
-    div:last-of-type{
-        @include border-box; 
-        .btn{
-            @include button($bg-color, $bg-color, black); 
-            padding:0;
-        }
         height:100%;
+        width:100%;
+        padding:0.3em!important;      
+        margin:0.4em 0;
+
+        overflow: hidden!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical!important;
+        -webkit-line-clamp: 1!important;
+
         border: solid;
         border-color: $yellow;
         border-width: 2px;
-        width:100%;
+        border-radius: 0px;
+
         text-align: center!important;
-        padding:1em!important;      
-        margin:2em auto;
         align-items:center;
+
+        font-family: $heading-font-family;
+        font-weight: normal;
+        font-size:14px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;        
+        letter-spacing: normal;
+        color: #403f55;
+        // color:#1e2b34;
+
+        @include phone1{
+            font-size: 3.85vw!important;
+        }
+        @include phone2{
+            font-size: 3.5vw!important;
+        }
+        @include phone3{
+            font-size: 3.2vw!important;
+        }
+        @include phone{
+            font-size:2.95vw!important;
+        }
+        @include phone4{
+            font-size: 2.8vw!important;
+        }
+        @include phone5{
+            font-size: 2.7vw!important;
+        }
+        @include phone6{
+            font-size: 2.6vw!important;
+        }
+        @include phone7{
+            font-size: 2.5vw!important;
+        }
+        @include phone8{
+            font-size: 2.4vw!important;
+        }
+        @include phone9{
+            font-size: 2.3vw!important;
+        } 
+        @include tablet{
+            font-size: 2.375vw!important;
+            line-height: 1.75;
+        }
         @include tablet{
             max-width:100%;
-           width: max-content;
+            width: max-content;
             float:right;  
         }
-        a{
-            overflow: hidden!important;
-            display: -webkit-box!important;
-            -webkit-box-orient: vertical!important;
-            -webkit-line-clamp: 1!important;
-            font-weight: normal!important;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 2.29;
-            letter-spacing: normal;
-            color:#1e2b34;
-            font-size:14px!important;
-            @include phone1{
-                font-size: 3.85vw!important;
-            }
-            @include phone2{
-                font-size: 3.5vw!important;
-            }
-            @include phone3{
-                font-size: 3.2vw!important;
-            }
-            @include phone{
-                font-size:2.95vw!important;
-            }
-            @include phone4{
-                font-size: 2.8vw!important;
-            }
-            @include phone5{
-                font-size: 2.7vw!important;
-            }
-            @include phone6{
-                font-size: 2.6vw!important;
-            }
-            @include phone7{
-                font-size: 2.5vw!important;
-            }
-            @include phone8{
-                font-size: 2.4vw!important;
-            }
-            @include phone9{
-                font-size: 2.3vw!important;
-            } 
-            @include tablet{
-                font-size: 2.375vw!important;
-                line-height: 1.75;
-            }
-            @include desktop{
-                font-size: 2.2vw!important;
-                line-height: 1.33;
-            }
-            @include xxl{
-                font-size: 24px!important;
-            }
+        @include desktop{
+            font-size: 2.2vw!important;
+            line-height: 1.33;
         }
-
+        @include xxl{
+            font-size: 24px!important;
+        }
     }
-
 
     p{
         font-weight: normal;
