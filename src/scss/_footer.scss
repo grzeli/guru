@@ -1,4 +1,9 @@
-footer .footer{
+footer, section {
+    &.with-bg {
+        background-color: $bg-footer-color;
+    }
+}
+footer .footer, section .footer{
     @include clearfix;
     @include border-box;
     width:95%; 
@@ -9,9 +14,6 @@ footer .footer{
 
     @include desktop{
         width:100%;
-    }
-    &.with-bg {
-        background-color: $bg-footer-color;
     }
     div:nth-of-type(n){
         display:inline-block!important; 
