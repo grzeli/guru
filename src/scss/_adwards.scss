@@ -45,6 +45,23 @@
                     line-height: 3em;
                     padding:.45em 1em;
                     display:block;
+                    a{
+                        font-size: 2vw;
+                        text-transform: uppercase;
+                        @include tablet{
+                            font-size: 1.4vw;
+                        }
+                        @include desktop{
+                            font-size: 1.2vw;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical; 
+                        }
+                        @include xxl{
+                            font-size: 1vw;
+                        }
+                    }
                 }
             }
             @include tablet{               
