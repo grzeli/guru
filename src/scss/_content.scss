@@ -200,7 +200,7 @@
 
 
 
-    div:last-of-type{
+    div.btn-container{
         @include border-box; 
         .btn{
             @include button($bg-color, $bg-color, black); 

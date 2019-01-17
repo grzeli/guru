@@ -15,6 +15,110 @@
 
     }
 
+    ul{  
+
+        width:100%;
+        margin:0 auto;      
+        text-align: left;
+        list-style: none;
+        text-decoration: none;
+        display:block;
+
+        a{
+            text-decoration: none;
+            font-weight: normal;
+            color:$nav-background;
+            line-height: 2em;
+        }
+        li{   
+            border-bottom: solid;
+            border-width: 1px;
+            width:100%;
+            margin:0 auto;
+            border-color: #d8d8d8;
+            padding:1em 0;
+            ul{ 
+                display:none;
+                li{ 
+                    border-bottom: none;
+                    margin:0 auto;
+                    line-height: 3em;
+                    padding:.45em 1em;
+                    display:block;
+                }
+            }
+            @include tablet{               
+                ul{                    
+                    li{
+                        border-bottom: none;
+                        padding:.3em 1em;
+                        display:block;
+                        line-height: normal;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    h2{
+        font-family: $paragraph-font-family;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.63;
+        letter-spacing: normal;
+        color: #000000;
+        font-size:16px;
+        @include phone1{
+            font-size:4.4vw;
+        }
+        @include phone2{
+            font-size: 4vw;
+        }
+        @include phone3{
+            font-size: 3.6vw;
+        }
+        @include phone{
+            font-size:3.3vw;
+        }
+        @include phone4{
+            font-size: 3.05vw;
+        }
+        @include phone5{
+            font-size: 2.75vw;
+        }
+        @include phone6{
+            font-size: 2.58vw;
+        }
+        @include phone7{
+            font-size: 2.4vw;
+        }
+        @include phone8{
+            font-size: 2.3vw;
+        }
+        @include phone9{
+            font-size: 2.16vw;
+        } 
+        @include tablet{
+            font-size:1.8vw;
+        }
+        @include desktop{
+            font-size: 1.6vw;
+        }
+        @include xxl{
+            font-size: 1.5vw;
+        }
+        a {
+            color: #000000;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
     h4{
         text-transform: uppercase;
         font-weight: bold;
@@ -65,6 +169,7 @@
         }
 
     }
+
     h5{
         font-weight: normal;
         font-style: normal;
@@ -115,62 +220,66 @@
         }
     }
 
+    .adwards-container {
+        a{
+            font-family: $heading-font-family;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            text-transform: none;
+            text-decoration: none;
+            font-size:14px;
+            @include phone1{
+                font-size: 3.85vw;
+            }
+            @include phone2{
+                font-size: 3.45vw;
+            }
+            @include phone3{
+                font-size: 3.2vw;
+            }
+            @include phone{
+                font-size:2.92vw;
+            }
+            @include phone4{
+                font-size: 2.7vw;
+            }
+            @include phone5{
+                font-size: 2.5vw;
+            }
+            @include phone6{
+                font-size: 2.3vw;
+            }
+            @include phone7{
+                font-size: 2.2vw;
+            }
+            @include phone8{
+                font-size: 2.05vw;
+            }
+            @include phone9{
+                font-size: 1.95vw;
+            }          
+            @include tablet{
+                font-size: 1.73vw;
+            }
+            @include desktop{
+                font-size: 1.29vw;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical; 
+            }
+            @include xxl{
+                font-size: 16px;
+            }
 
-    p{
-        font-family: $heading-font-family;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #000000;
-        text-transform: none;
-        font-size:14px;
-        @include phone1{
-            font-size: 3.85vw;
+            &:hover {
+                text-decoration: underline;
+            }
         }
-        @include phone2{
-            font-size: 3.45vw;
-        }
-        @include phone3{
-            font-size: 3.2vw;
-        }
-        @include phone{
-            font-size:2.92vw;
-        }
-        @include phone4{
-            font-size: 2.7vw;
-        }
-        @include phone5{
-            font-size: 2.5vw;
-        }
-        @include phone6{
-            font-size: 2.3vw;
-        }
-        @include phone7{
-            font-size: 2.2vw;
-        }
-        @include phone8{
-            font-size: 2.05vw;
-        }
-        @include phone9{
-            font-size: 1.95vw;
-        }          
-        @include tablet{
-            font-size: 1.73vw;
-        }
-        @include desktop{
-            font-size: 1.29vw;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical; 
-        }
-        @include xxl{
-            font-size: 16px;
-        }
-
-
     }
 
     .adwards-container{
@@ -183,7 +292,7 @@
             width: 33%;
             height:auto;
         }
-        p, h4{
+        h3, h4{
             width:67%;
             float:right;
             padding-left:15px;
