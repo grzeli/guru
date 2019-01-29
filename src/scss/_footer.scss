@@ -1,6 +1,10 @@
 footer, section {
     &.with-bg {
         background-color: $bg-footer-color;
+
+        h5 span {
+            background-color: $bg-footer-color;
+        }
     }
 }
 footer .footer, section .footer{
@@ -268,7 +272,6 @@ footer .footer, section .footer{
     } 
     h5 span{
         text-transform: uppercase;
-        background-color: $bg-footer-color;
         padding:0 1em;
     }
     h5{
@@ -331,25 +334,55 @@ footer .footer, section .footer{
 
         a{
             text-decoration: none;
-            font-family: $heading-font-family;            
+            &:hover {
+                text-decoration: underline;
+            }
+            font-family: $paragraph-font-family;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 1.2px;
-            color: #403f55;
-            font-size: 2.8vw;
-            @include phone{
-                font-size: 1.765vw;
+            line-height: 2.63;
+            letter-spacing: normal;
+            color: #000000;
+            font-size:16px;
+            @include phone1{
+                font-size:4.4vw;
             }
+            @include phone2{
+                font-size: 4vw;
+            }
+            @include phone3{
+                font-size: 3.6vw;
+            }
+            @include phone{
+                font-size:3.3vw;
+            }
+            @include phone4{
+                font-size: 3.05vw;
+            }
+            @include phone5{
+                font-size: 2.75vw;
+            }
+            @include phone6{
+                font-size: 2.58vw;
+            }
+            @include phone7{
+                font-size: 2.4vw;
+            }
+            @include phone8{
+                font-size: 2.3vw;
+            }
+            @include phone9{
+                font-size: 2.16vw;
+            } 
             @include tablet{
-                font-size: 1.5vw;
+                font-size:1.8vw;
             }
             @include desktop{
-                font-size: 1.3vw;
+                font-size: 1.6vw;
             }
             @include xxl{
-                font-size: 14px;;
+                font-size: 1.5vw;
             }
         }
         li{ 
