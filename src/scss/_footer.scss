@@ -184,26 +184,38 @@ footer .footer, section .footer{
     }
 
     p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        // line-height: 16px;     /* fallback */
+        // max-height: 32px;      /* fallback */
+        -webkit-line-clamp: 5; /* number of lines to show */
+        -webkit-box-orient: vertical;
+
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
-        line-height: 1.42;
         font-size: 3vw;
+        line-height: 4.26vw;
         @include phone{
-            line-height: 1.45;
             font-size: 2.2vw;
+            line-height: 3.19vw;
         }
         @include tablet{
             font-size: 1.675vw;
-            line-height: 1.475;
+            line-height: 2.512vw;
+            max-height: 12.562vw;
         }
         @include desktop{
             font-size: 1.465vw;
-            line-height: 1.5;
+            line-height: 2.197vw;
+            max-height: 10.987vw;
         }
         @include xxl{
             font-size: 16px;
+            line-height: 24px;
+            max-height: 120px;
         }
     } 
 
