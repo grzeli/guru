@@ -12,6 +12,10 @@
     font-weight: normal;
     img{
         width:100%;
+        margin-bottom: 8em;
+        @include tablet{
+            margin-bottom: 5em;
+        }
     }
     p{
         font-weight: normal;
