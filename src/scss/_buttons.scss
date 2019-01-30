@@ -2,3 +2,10 @@
     @include button($bg-color, $bg-color, black);
     padding: 10px 0;
 }
+
+h6 {
+    a{
+        @include button($bg-color, $bg-color, black);
+        padding: 10px 0;
+    }
+}

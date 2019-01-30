@@ -69,7 +69,15 @@
             font-size: 16px;
         }
     }
-    .btn{
+    a {
+        color: #2b2b2b;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h6 > a{
         @include button($yellow, $yellow, white);
         @include border-radius(3px);
         text-transform: uppercase;
