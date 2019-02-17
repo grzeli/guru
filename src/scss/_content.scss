@@ -35,8 +35,10 @@
         h2, h4, p, button{
             display:none!important;
         }
-        img{
-             order:1!important;
+        @include tablet{
+            img{
+                order:1!important;
+            }
         }
         max-width:100%!important;
         width:100%!important;
