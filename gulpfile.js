@@ -22,7 +22,8 @@ var SOURCEPATHS ={
     htmlSource : 'src/*.html',
     htmlPartialSource : 'src/partial/*.html',
     jsSource : 'src/js/**',
-    imgSource : 'src/img/**'
+    imgSource : 'src/img/**',
+    faviconSource : 'src/favicon.ico'
 }
 var APPPATH ={
     root: 'app/',
@@ -58,6 +59,12 @@ gulp.task('images', function(){
         .pipe(newer(APPPATH.img))
         .pipe(imagemin())
         .pipe(gulp.dest(APPPATH.img));
+});
+
+gulp.task('favicon', function(){
+    return gulp.src(SOURCEPATHS.faviconSource)
+        .pipe(newer(APPPATH.root))
+        .pipe(gulp.dest(APPPATH.root));
 });
 
 gulp.task('scripts', ['clean-scripts'], function(){
@@ -112,14 +119,15 @@ gulp.task('html', function(){
 });*/
 
 gulp.task('serve', ['sass'], function(){
-    browserSync.init([APPPATH.css + '/*.css', APPPATH.root + '/*.html', APPPATH.js + '/*.js'], {
+    browserSync.init([APPPATH.css + '/*.css', APPPATH.root + '/*.html', APPPATH.js + '/*.js', APPPATH.root + '/favicon.ico'], {
         server: {
             baseDir: APPPATH.root
-        }  
+        },
+        open: false
     })
 });
 
-gulp.task('watch', ['serve', 'sass','images', 'clean-html', 'clean-scripts',  'scripts', 'html'], function(){
+gulp.task('watch', ['serve', 'sass', 'images', 'favicon', 'clean-html', 'clean-scripts',  'scripts', 'html'], function(){
     gulp.watch([SOURCEPATHS.sassSource], ['sass']);
     /* gulp.watch([SOURCEPATHS.htmlSource], ['copy']);*/
     gulp.watch([SOURCEPATHS.jsSource], ['scripts']);
