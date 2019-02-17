@@ -116,6 +116,9 @@
                 margin-top: 15px;
             }
         }
+        h3 {
+            -webkit-line-clamp: 2;
+        }
         p{
             overflow: hidden;
             display: -webkit-box;
@@ -161,6 +164,9 @@
                 margin-bottom: 10px;
                 margin-top:0;
             }
+        }
+        h3 {
+            -webkit-line-clamp: 3;
         }
         p{
             overflow: hidden;
@@ -339,7 +345,7 @@
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+        // -webkit-line-clamp: 2;
         font-size:18px;
         @include phone1{
             font-size: 5vw;
