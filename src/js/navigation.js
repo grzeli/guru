@@ -11,6 +11,6 @@
     });
   
     $('#nav-toggle').click(function() {
-        $('nav > ul').toggle();
+        $('nav > ul').toggleClass("show");
     });
 })(jQuery);

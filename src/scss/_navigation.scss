@@ -320,9 +320,9 @@ nav {
         }
 
         ul {
-            display: none;
-
-
+            &:not(.show) {
+                display: none;
+            }
             li {
                 float: none;
                 text-align: left;  
