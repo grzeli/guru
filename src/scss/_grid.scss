@@ -1,19 +1,17 @@
 .container{
-     @include clearfix;
-    position: static;   
-    padding: 0;
-    margin: 0 auto;
-    width: 90%;
-    max-width:$grid-max-width;  
-    padding-bottom: 5em;     
-    @include tablet{
-        width:95%;
-    }
-    @include desktop{
-        width:100%;       
-        padding-left:2.5%!important;
-        padding-right: 2.5%!important;
-    
-    }
-   
+  @include clearfix;
+  position: static;   
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width:$grid-max-width;  
+  padding-bottom: 5em;     
+  @include tablet{
+    width:95%;
+  }
+  @include desktop{
+    width:100%;       
+    padding-left:2.5%!important;
+    padding-right: 2.5%!important;    
+  }
 }

@@ -124,7 +124,7 @@ gulp.task('watch', ['serve', 'sass','images', 'clean-html', 'clean-scripts',  's
     /* gulp.watch([SOURCEPATHS.htmlSource], ['copy']);*/
     gulp.watch([SOURCEPATHS.jsSource], ['scripts']);
     gulp.watch([SOURCEPATHS.imgSource], ['images']);
-    gulp.watch([SOURCEPATHS.htmlPartialSource, SOURCEPATHS.htmlPartialSource], ['html']);
+    gulp.watch([SOURCEPATHS.htmlPartialSource, SOURCEPATHS.htmlSource], ['html']);
 });
 
 gulp.task('default',['watch']);
